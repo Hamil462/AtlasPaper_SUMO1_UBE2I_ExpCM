@@ -1,0 +1,589 @@
+2016-07-22 14:50:49,018 - INFO - Beginning execution of phydms in directory /home/jbloom/SUMO_and_UBE2I_ExpCM
+
+2016-07-22 14:50:49,018 - INFO - Progress is being logged to ./phydms_results//SUMO1_identity-ge-0.75_ExpCM_SUMO1_no-cons_penalize-scores-gt1_prefs.log
+
+2016-07-22 14:50:49,018 - INFO - Version information:
+	Time and date: Fri Jul 22 14:50:48 2016
+	Platform: Linux-3.13.0-68-generic-x86_64-with-Ubuntu-14.04-trusty
+	Python version: 2.7.6 (default, Jun 22 2015, 17:58:13)  [GCC 4.8.2]
+	phydms version: 1.2.dev4
+	Bio version: 1.67
+	cython version: 0.24.1
+	dms_tools version: 1.1.16
+	scipy version: 0.17.1
+	matplotlib version: 1.5.1
+
+2016-07-22 14:50:49,018 - INFO - Parsed the following command-line arguments:
+	randprefs = False
+	tree = ./phydms_results//SUMO1_identity-ge-0.75_ExpCM_SUMO1_no-cons_penalize-scores-gt1_prefs_tree.newick
+	ncpus = -1
+	avgprefs = False
+	seed = 1
+	ncats = 6
+	outprefix = ./phydms_results//SUMO1_identity-ge-0.75_ExpCM_SUMO1_no-cons_penalize-scores-gt1_prefs
+	alignment = ./alignments/SUMO1_alignment_protidentity_ge_0.75.fasta
+	stringencybysite = False
+	recursion = S
+	no_optimize = True
+	fitF3X4 = False
+	gammarates = False
+	debugsite = None
+	useLog = False
+	diffprefsprior = invquad
+	diffprefsbysite = True
+	diffprefconc = [150, 0.5]
+	infertopology = False
+	omegabysite_fixsyn = False
+	addrateparameter = False
+	omegabysite = True
+	fixbrlen = False
+	dateseqs = None
+	model = ('ExpCM', './prefs//SUMO1_no-cons_penalize-scores-gt1_prefs.txt')
+	minbrlen = 1e-06
+
+2016-07-22 14:50:49,018 - INFO - Seeding random number generator with 1
+
+2016-07-22 14:50:49,018 - INFO - Reading alignment from ./alignments/SUMO1_alignment_protidentity_ge_0.75.fasta
+2016-07-22 14:50:49,071 - INFO - Read 30 aligned codon sequences from ./alignments/SUMO1_alignment_protidentity_ge_0.75.fasta. Each sequence consists of 101 codons.
+
+2016-07-22 14:50:49,071 - INFO - There will be a single constant substitution rates.
+
+2016-07-22 14:50:49,071 - INFO - The codon substitution model will be experimentally informed by the site-specific amino-acid preferences in ./prefs//SUMO1_no-cons_penalize-scores-gt1_prefs.txt
+2016-07-22 14:50:49,073 - INFO - Successfully read site-specific amino-acid preferences for all 101 sites.
+
+2016-07-22 14:50:49,073 - INFO - Reading tree from ./phydms_results//SUMO1_identity-ge-0.75_ExpCM_SUMO1_no-cons_penalize-scores-gt1_prefs_tree.newick
+2016-07-22 14:50:49,075 - INFO - This tree has 30 tips nodes, matching the sequences in alignment.
+2016-07-22 14:50:49,077 - INFO - Because --no_optimize is being used, the tree and model parameters will not be optimized. Instead using the existing values from a previous optimization in the following files: ./phydms_results//SUMO1_identity-ge-0.75_ExpCM_SUMO1_no-cons_penalize-scores-gt1_prefs_modelparams.txt, ./phydms_results//SUMO1_identity-ge-0.75_ExpCM_SUMO1_no-cons_penalize-scores-gt1_prefs_loglikelihood.txt, ./phydms_results//SUMO1_identity-ge-0.75_ExpCM_SUMO1_no-cons_penalize-scores-gt1_prefs_tree.newick
+
+2016-07-22 14:51:01,884 - INFO - Using 56 CPUs for the remaining computations.
+
+2016-07-22 14:51:01,885 - INFO - Now optimizing a different omega for each site while keeping branch lengths and other model parameters fixed.
+2016-07-22 14:51:01,885 - INFO - Not using '--omegabysite_fixsyn', so we fit a synonymous rate for each site. This means we compare fitting omega and a synonymous rate to fitting just a synonymous rate.
+2016-07-22 14:51:01,885 - INFO - The tree and branch lengths will be fixed to the values in ./phydms_results//SUMO1_identity-ge-0.75_ExpCM_SUMO1_no-cons_penalize-scores-gt1_prefs_tree.newick
+2016-07-22 14:51:01,885 - INFO - The remaining model parameters will be to fixed to the following:
+	123_Full.theta1 = 0.553943
+	123_K80.kappa = 1.99092
+	123_Full.theta2 = 0.523256
+	stringencyparameter = 3.20198
+	123_Full.theta = 0.449594
+
+2016-07-22 14:51:10,029 - INFO - For site 29, fitting omega to 0.51 increases LnL by 0.00 relative to fixing omega at 1.00 (P-value 1). Fitting took 7.9 seconds.
+
+2016-07-22 14:51:11,031 - INFO - For site 40, fitting omega to 0.30 increases LnL by 0.00 relative to fixing omega at 1.00 (P-value 1). Fitting took 8.4 seconds.
+
+2016-07-22 14:51:11,031 - INFO - For site 54, fitting omega to 2.20 increases LnL by 0.00 relative to fixing omega at 1.00 (P-value 1). Fitting took 8.5 seconds.
+
+2016-07-22 14:51:11,031 - INFO - For site 55, fitting omega to 2.03 increases LnL by 0.00 relative to fixing omega at 1.00 (P-value 1). Fitting took 8.1 seconds.
+
+2016-07-22 14:51:14,035 - INFO - For site 24, fitting omega to 0.00 increases LnL by 1.51 relative to fixing omega at 1.00 (P-value 0.082). Fitting took 11.9 seconds.
+
+2016-07-22 14:51:16,037 - INFO - For site 26, fitting omega to 0.00 increases LnL by 3.00 relative to fixing omega at 1.00 (P-value 0.014). Fitting took 14.0 seconds.
+
+2016-07-22 14:51:17,038 - INFO - For site 9, fitting omega to 0.00 increases LnL by 4.95 relative to fixing omega at 1.00 (P-value 0.0016). Fitting took 14.9 seconds.
+
+2016-07-22 14:51:17,040 - INFO - For site 22, fitting omega to 0.00 increases LnL by 4.65 relative to fixing omega at 1.00 (P-value 0.0023). Fitting took 14.0 seconds.
+
+2016-07-22 14:51:17,040 - INFO - For site 28, fitting omega to 0.00 increases LnL by 5.67 relative to fixing omega at 1.00 (P-value 0.00076). Fitting took 14.5 seconds.
+
+2016-07-22 14:51:17,040 - INFO - For site 42, fitting omega to 0.00 increases LnL by 2.58 relative to fixing omega at 1.00 (P-value 0.023). Fitting took 14.8 seconds.
+
+2016-07-22 14:51:17,040 - INFO - For site 47, fitting omega to 0.00 increases LnL by 1.28 relative to fixing omega at 1.00 (P-value 0.11). Fitting took 14.2 seconds.
+
+2016-07-22 14:51:18,042 - INFO - For site 36, fitting omega to 0.38 increases LnL by 0.38 relative to fixing omega at 1.00 (P-value 0.39). Fitting took 15.5 seconds.
+
+2016-07-22 14:51:18,042 - INFO - For site 44, fitting omega to 0.00 increases LnL by 1.60 relative to fixing omega at 1.00 (P-value 0.074). Fitting took 15.7 seconds.
+
+2016-07-22 14:51:19,042 - INFO - For site 16, fitting omega to 0.50 increases LnL by 0.25 relative to fixing omega at 1.00 (P-value 0.48). Fitting took 16.8 seconds.
+
+2016-07-22 14:51:19,043 - INFO - For site 19, fitting omega to 0.00 increases LnL by 5.66 relative to fixing omega at 1.00 (P-value 0.00077). Fitting took 17.0 seconds.
+
+2016-07-22 14:51:19,043 - INFO - For site 56, fitting omega to 0.00 increases LnL by 7.65 relative to fixing omega at 1.00 (P-value 9.2e-05). Fitting took 16.8 seconds.
+
+2016-07-22 14:51:20,044 - INFO - For site 4, fitting omega to 3.06 increases LnL by 0.58 relative to fixing omega at 1.00 (P-value 0.28). Fitting took 17.7 seconds.
+
+2016-07-22 14:51:20,044 - INFO - For site 34, fitting omega to 0.00 increases LnL by 2.90 relative to fixing omega at 1.00 (P-value 0.016). Fitting took 17.1 seconds.
+
+2016-07-22 14:51:20,044 - INFO - For site 35, fitting omega to 0.00 increases LnL by 7.98 relative to fixing omega at 1.00 (P-value 6.5e-05). Fitting took 17.5 seconds.
+
+2016-07-22 14:51:20,045 - INFO - For site 48, fitting omega to 0.00 increases LnL by 0.18 relative to fixing omega at 1.00 (P-value 0.55). Fitting took 17.4 seconds.
+
+2016-07-22 14:51:20,045 - INFO - For site 50, fitting omega to 0.00 increases LnL by 3.48 relative to fixing omega at 1.00 (P-value 0.0083). Fitting took 17.1 seconds.
+
+2016-07-22 14:51:20,045 - INFO - For site 52, fitting omega to 0.47 increases LnL by 0.18 relative to fixing omega at 1.00 (P-value 0.55). Fitting took 17.4 seconds.
+
+2016-07-22 14:51:21,046 - INFO - For site 33, fitting omega to 0.00 increases LnL by 2.55 relative to fixing omega at 1.00 (P-value 0.024). Fitting took 18.5 seconds.
+
+2016-07-22 14:51:21,046 - INFO - For site 38, fitting omega to 0.00 increases LnL by 2.17 relative to fixing omega at 1.00 (P-value 0.037). Fitting took 18.6 seconds.
+
+2016-07-22 14:51:21,046 - INFO - For site 46, fitting omega to 0.00 increases LnL by 4.80 relative to fixing omega at 1.00 (P-value 0.002). Fitting took 18.9 seconds.
+
+2016-07-22 14:51:22,048 - INFO - For site 5, fitting omega to 0.00 increases LnL by 8.09 relative to fixing omega at 1.00 (P-value 5.8e-05). Fitting took 19.3 seconds.
+
+2016-07-22 14:51:22,048 - INFO - For site 37, fitting omega to 0.00 increases LnL by 4.53 relative to fixing omega at 1.00 (P-value 0.0026). Fitting took 19.2 seconds.
+
+2016-07-22 14:51:22,048 - INFO - For site 39, fitting omega to 0.00 increases LnL by 2.11 relative to fixing omega at 1.00 (P-value 0.04). Fitting took 19.4 seconds.
+
+2016-07-22 14:51:23,049 - INFO - For site 13, fitting omega to 0.54 increases LnL by 0.47 relative to fixing omega at 1.00 (P-value 0.33). Fitting took 20.2 seconds.
+
+2016-07-22 14:51:23,050 - INFO - For site 14, fitting omega to 0.23 increases LnL by 2.46 relative to fixing omega at 1.00 (P-value 0.027). Fitting took 20.8 seconds.
+
+2016-07-22 14:51:23,050 - INFO - For site 21, fitting omega to 0.00 increases LnL by 12.88 relative to fixing omega at 1.00 (P-value 3.9e-07). Fitting took 20.2 seconds.
+
+2016-07-22 14:51:23,050 - INFO - For site 41, fitting omega to 0.00 increases LnL by 9.10 relative to fixing omega at 1.00 (P-value 2e-05). Fitting took 20.7 seconds.
+
+2016-07-22 14:51:23,050 - INFO - For site 45, fitting omega to 0.20 increases LnL by 0.86 relative to fixing omega at 1.00 (P-value 0.19). Fitting took 20.5 seconds.
+
+2016-07-22 14:51:24,051 - INFO - For site 27, fitting omega to 0.10 increases LnL by 3.00 relative to fixing omega at 1.00 (P-value 0.014). Fitting took 21.9 seconds.
+
+2016-07-22 14:51:24,051 - INFO - For site 49, fitting omega to 0.00 increases LnL by 2.29 relative to fixing omega at 1.00 (P-value 0.032). Fitting took 21.5 seconds.
+
+2016-07-22 14:51:25,052 - INFO - For site 8, fitting omega to 0.11 increases LnL by 2.78 relative to fixing omega at 1.00 (P-value 0.018). Fitting took 22.7 seconds.
+
+2016-07-22 14:51:25,052 - INFO - For site 30, fitting omega to 0.00 increases LnL by 4.78 relative to fixing omega at 1.00 (P-value 0.002). Fitting took 22.5 seconds.
+
+2016-07-22 14:51:25,053 - INFO - For site 53, fitting omega to 0.00 increases LnL by 2.83 relative to fixing omega at 1.00 (P-value 0.017). Fitting took 22.8 seconds.
+
+2016-07-22 14:51:26,054 - INFO - For site 23, fitting omega to 0.00 increases LnL by 2.94 relative to fixing omega at 1.00 (P-value 0.015). Fitting took 23.3 seconds.
+
+2016-07-22 14:51:28,056 - INFO - For site 15, fitting omega to 0.41 increases LnL by 0.36 relative to fixing omega at 1.00 (P-value 0.4). Fitting took 26.0 seconds.
+
+2016-07-22 14:51:28,056 - INFO - For site 25, fitting omega to 0.00 increases LnL by 1.24 relative to fixing omega at 1.00 (P-value 0.12). Fitting took 25.2 seconds.
+
+2016-07-22 14:51:28,056 - INFO - For site 65, fitting omega to 0.00 increases LnL by 4.24 relative to fixing omega at 1.00 (P-value 0.0036). Fitting took 11.4 seconds.
+
+2016-07-22 14:51:29,057 - INFO - For site 57, fitting omega to 0.24 increases LnL by 0.88 relative to fixing omega at 1.00 (P-value 0.19). Fitting took 18.7 seconds.
+
+2016-07-22 14:51:30,059 - INFO - For site 6, fitting omega to 0.06 increases LnL by 5.25 relative to fixing omega at 1.00 (P-value 0.0012). Fitting took 28.0 seconds.
+
+2016-07-22 14:51:30,059 - INFO - For site 10, fitting omega to 0.21 increases LnL by 2.68 relative to fixing omega at 1.00 (P-value 0.021). Fitting took 27.5 seconds.
+
+2016-07-22 14:51:30,059 - INFO - For site 82, fitting omega to 1.68 increases LnL by 0.00 relative to fixing omega at 1.00 (P-value 1). Fitting took 8.1 seconds.
+
+2016-07-22 14:51:31,060 - INFO - For site 77, fitting omega to 0.00 increases LnL by 0.82 relative to fixing omega at 1.00 (P-value 0.2). Fitting took 11.5 seconds.
+
+2016-07-22 14:51:33,063 - INFO - For site 43, fitting omega to 0.08 increases LnL by 2.08 relative to fixing omega at 1.00 (P-value 0.042). Fitting took 31.0 seconds.
+
+2016-07-22 14:51:33,063 - INFO - For site 68, fitting omega to 0.00 increases LnL by 0.34 relative to fixing omega at 1.00 (P-value 0.41). Fitting took 14.8 seconds.
+
+2016-07-22 14:51:33,063 - INFO - For site 93, fitting omega to 2.04 increases LnL by 0.00 relative to fixing omega at 1.00 (P-value 1). Fitting took 8.2 seconds.
+
+2016-07-22 14:51:34,064 - INFO - For site 7, fitting omega to 0.03 increases LnL by 6.23 relative to fixing omega at 1.00 (P-value 0.00042). Fitting took 31.1 seconds.
+
+2016-07-22 14:51:34,065 - INFO - For site 11, fitting omega to 0.19 increases LnL by 2.04 relative to fixing omega at 1.00 (P-value 0.043). Fitting took 32.0 seconds.
+
+2016-07-22 14:51:34,065 - INFO - For site 17, fitting omega to 0.11 increases LnL by 3.52 relative to fixing omega at 1.00 (P-value 0.008). Fitting took 31.1 seconds.
+
+2016-07-22 14:51:34,065 - INFO - For site 62, fitting omega to 0.00 increases LnL by 1.95 relative to fixing omega at 1.00 (P-value 0.048). Fitting took 17.7 seconds.
+
+2016-07-22 14:51:35,066 - INFO - For site 61, fitting omega to 0.18 increases LnL by 1.47 relative to fixing omega at 1.00 (P-value 0.086). Fitting took 20.5 seconds.
+
+2016-07-22 14:51:35,068 - INFO - For site 63, fitting omega to 0.00 increases LnL by 1.64 relative to fixing omega at 1.00 (P-value 0.07). Fitting took 18.9 seconds.
+
+2016-07-22 14:51:35,068 - INFO - For site 67, fitting omega to 0.00 increases LnL by 7.59 relative to fixing omega at 1.00 (P-value 9.7e-05). Fitting took 17.7 seconds.
+
+2016-07-22 14:51:35,068 - INFO - For site 71, fitting omega to 0.54 increases LnL by 0.14 relative to fixing omega at 1.00 (P-value 0.6). Fitting took 15.4 seconds.
+
+2016-07-22 14:51:35,068 - INFO - For site 76, fitting omega to 0.00 increases LnL by 1.29 relative to fixing omega at 1.00 (P-value 0.11). Fitting took 14.9 seconds.
+
+2016-07-22 14:51:35,068 - INFO - For site 80, fitting omega to 0.00 increases LnL by 0.64 relative to fixing omega at 1.00 (P-value 0.26). Fitting took 13.9 seconds.
+
+2016-07-22 14:51:36,070 - INFO - For site 32, fitting omega to 0.03 increases LnL by 6.56 relative to fixing omega at 1.00 (P-value 0.00029). Fitting took 33.1 seconds.
+
+2016-07-22 14:51:36,070 - INFO - For site 64, fitting omega to 0.00 increases LnL by 0.26 relative to fixing omega at 1.00 (P-value 0.47). Fitting took 19.1 seconds.
+
+2016-07-22 14:51:37,071 - INFO - For site 2, fitting omega to 0.19 increases LnL by 3.78 relative to fixing omega at 1.00 (P-value 0.006). Fitting took 34.4 seconds.
+
+2016-07-22 14:51:37,071 - INFO - For site 20, fitting omega to 0.02 increases LnL by 7.73 relative to fixing omega at 1.00 (P-value 8.5e-05). Fitting took 34.6 seconds.
+
+2016-07-22 14:51:37,071 - INFO - For site 51, fitting omega to 99.00 increases LnL by 0.97 relative to fixing omega at 1.00 (P-value 0.16). Fitting took 34.9 seconds.
+
+2016-07-22 14:51:37,072 - INFO - For site 88, fitting omega to 1.32 increases LnL by 0.05 relative to fixing omega at 1.00 (P-value 0.76). Fitting took 14.2 seconds.
+
+2016-07-22 14:51:38,073 - INFO - For site 18, fitting omega to 0.09 increases LnL by 4.05 relative to fixing omega at 1.00 (P-value 0.0044). Fitting took 35.6 seconds.
+
+2016-07-22 14:51:38,073 - INFO - For site 31, fitting omega to 99.00 increases LnL by 0.63 relative to fixing omega at 1.00 (P-value 0.26). Fitting took 35.8 seconds.
+
+2016-07-22 14:51:38,073 - INFO - For site 66, fitting omega to 0.00 increases LnL by 1.19 relative to fixing omega at 1.00 (P-value 0.12). Fitting took 21.3 seconds.
+
+2016-07-22 14:51:38,073 - INFO - For site 81, fitting omega to 0.00 increases LnL by 8.14 relative to fixing omega at 1.00 (P-value 5.4e-05). Fitting took 16.9 seconds.
+
+2016-07-22 14:51:39,075 - INFO - For site 12, fitting omega to 0.08 increases LnL by 5.08 relative to fixing omega at 1.00 (P-value 0.0014). Fitting took 36.4 seconds.
+
+2016-07-22 14:51:39,075 - INFO - For site 70, fitting omega to 0.00 increases LnL by 2.29 relative to fixing omega at 1.00 (P-value 0.032). Fitting took 20.1 seconds.
+
+2016-07-22 14:51:39,075 - INFO - For site 72, fitting omega to 3.74 increases LnL by 0.87 relative to fixing omega at 1.00 (P-value 0.19). Fitting took 19.2 seconds.
+
+2016-07-22 14:51:39,075 - INFO - For site 73, fitting omega to 0.00 increases LnL by 0.22 relative to fixing omega at 1.00 (P-value 0.51). Fitting took 19.4 seconds.
+
+2016-07-22 14:51:39,075 - INFO - For site 83, fitting omega to 0.00 increases LnL by 8.88 relative to fixing omega at 1.00 (P-value 2.5e-05). Fitting took 16.9 seconds.
+
+2016-07-22 14:51:40,077 - INFO - For site 69, fitting omega to 0.00 increases LnL by 1.00 relative to fixing omega at 1.00 (P-value 0.16). Fitting took 21.8 seconds.
+
+2016-07-22 14:51:40,077 - INFO - For site 74, fitting omega to 0.38 increases LnL by 0.26 relative to fixing omega at 1.00 (P-value 0.47). Fitting took 20.0 seconds.
+
+2016-07-22 14:51:40,077 - INFO - For site 85, fitting omega to 0.00 increases LnL by 4.60 relative to fixing omega at 1.00 (P-value 0.0024). Fitting took 17.1 seconds.
+
+2016-07-22 14:51:40,077 - INFO - For site 89, fitting omega to 0.00 increases LnL by 4.09 relative to fixing omega at 1.00 (P-value 0.0042). Fitting took 16.4 seconds.
+
+2016-07-22 14:51:40,078 - INFO - For site 95, fitting omega to 0.00 increases LnL by 8.85 relative to fixing omega at 1.00 (P-value 2.6e-05). Fitting took 14.8 seconds.
+
+2016-07-22 14:51:40,078 - INFO - For site 96, fitting omega to 0.00 increases LnL by 0.30 relative to fixing omega at 1.00 (P-value 0.44). Fitting took 11.9 seconds.
+
+2016-07-22 14:51:41,079 - INFO - For site 58, fitting omega to 0.07 increases LnL by 4.31 relative to fixing omega at 1.00 (P-value 0.0033). Fitting took 30.2 seconds.
+
+2016-07-22 14:51:41,079 - INFO - For site 87, fitting omega to 0.00 increases LnL by 4.62 relative to fixing omega at 1.00 (P-value 0.0024). Fitting took 17.8 seconds.
+
+2016-07-22 14:51:42,080 - INFO - For site 60, fitting omega to 0.03 increases LnL by 5.51 relative to fixing omega at 1.00 (P-value 0.00091). Fitting took 31.5 seconds.
+
+2016-07-22 14:51:42,081 - INFO - For site 78, fitting omega to 0.00 increases LnL by 3.12 relative to fixing omega at 1.00 (P-value 0.013). Fitting took 21.5 seconds.
+
+2016-07-22 14:51:42,081 - INFO - For site 86, fitting omega to 0.00 increases LnL by 3.52 relative to fixing omega at 1.00 (P-value 0.008). Fitting took 19.6 seconds.
+
+2016-07-22 14:51:42,081 - INFO - For site 90, fitting omega to 0.00 increases LnL by 0.86 relative to fixing omega at 1.00 (P-value 0.19). Fitting took 17.8 seconds.
+
+2016-07-22 14:51:42,081 - INFO - For site 91, fitting omega to 0.00 increases LnL by 0.99 relative to fixing omega at 1.00 (P-value 0.16). Fitting took 17.7 seconds.
+
+2016-07-22 14:51:42,081 - INFO - For site 92, fitting omega to 0.00 increases LnL by 4.10 relative to fixing omega at 1.00 (P-value 0.0042). Fitting took 16.8 seconds.
+
+2016-07-22 14:51:42,081 - INFO - For site 101, fitting omega to 1.06 increases LnL by 0.00 relative to fixing omega at 1.00 (P-value 0.93). Fitting took 12.2 seconds.
+
+2016-07-22 14:51:43,083 - INFO - For site 79, fitting omega to 0.00 increases LnL by 2.64 relative to fixing omega at 1.00 (P-value 0.022). Fitting took 22.4 seconds.
+
+2016-07-22 14:51:43,083 - INFO - For site 97, fitting omega to 1.07 increases LnL by 0.00 relative to fixing omega at 1.00 (P-value 0.94). Fitting took 14.7 seconds.
+
+2016-07-22 14:51:45,086 - INFO - For site 94, fitting omega to 0.00 increases LnL by 0.93 relative to fixing omega at 1.00 (P-value 0.17). Fitting took 19.4 seconds.
+
+2016-07-22 14:51:46,087 - INFO - For site 98, fitting omega to 0.47 increases LnL by 0.71 relative to fixing omega at 1.00 (P-value 0.23). Fitting took 17.3 seconds.
+
+2016-07-22 14:51:46,087 - INFO - For site 99, fitting omega to 0.30 increases LnL by 1.16 relative to fixing omega at 1.00 (P-value 0.13). Fitting took 17.3 seconds.
+
+2016-07-22 14:51:47,089 - INFO - For site 84, fitting omega to 0.03 increases LnL by 6.93 relative to fixing omega at 1.00 (P-value 0.0002). Fitting took 25.3 seconds.
+
+2016-07-22 14:51:47,089 - INFO - For site 100, fitting omega to 0.77 increases LnL by 0.06 relative to fixing omega at 1.00 (P-value 0.72). Fitting took 17.4 seconds.
+
+2016-07-22 14:51:48,090 - INFO - For site 75, fitting omega to 0.10 increases LnL by 4.00 relative to fixing omega at 1.00 (P-value 0.0047). Fitting took 28.2 seconds.
+
+2016-07-22 14:51:49,091 - INFO - For site 3, fitting omega to 0.19 increases LnL by 2.22 relative to fixing omega at 1.00 (P-value 0.035). Fitting took 46.6 seconds.
+
+2016-07-22 14:51:59,102 - INFO - For site 59, fitting omega to 0.14 increases LnL by 1.70 relative to fixing omega at 1.00 (P-value 0.065). Fitting took 48.1 seconds.
+
+2016-07-22 14:54:06,245 - INFO - For site 1, fitting omega to 0.00 increases LnL by 8.25 relative to fixing omega at 1.00 (P-value 4.9e-05). Fitting took 183.4 seconds.
+
+2016-07-22 14:54:06,386 - INFO - Now writing the full results of the omega-by-site analysis to ./phydms_results//SUMO1_identity-ge-0.75_ExpCM_SUMO1_no-cons_penalize-scores-gt1_prefs_omegabysite.txt
+
+2016-07-22 14:54:06,390 - INFO - Now estimating the difference between the preferences specified in ./prefs//SUMO1_no-cons_penalize-scores-gt1_prefs.txt and those that best describe the natural evolution. We optimize the preferences after regularizing them using a invquad prior (concentrating parameters C1 = 150.00, C2 = 0.50). The preferences in the file are first rescaled by the stringency parameter value of 3.20 previously optimized for the entire sequence / tree, and the difference in preferences are relative to these rescaled preferences. After this rescaling, the stringency parameter is set to one. All other model parameters are fixed to their maximum likelihood values for the entire sequence / tree.
+2016-07-22 14:54:06,390 - INFO - The tree and branch lengths will be fixed to the values in ./phydms_results//SUMO1_identity-ge-0.75_ExpCM_SUMO1_no-cons_penalize-scores-gt1_prefs_tree.newick
+2016-07-22 14:54:06,390 - INFO - The model parameters will be to fixed to the following:
+	123_Full.theta1 = 0.553943
+	omega = 0.154476
+	123_Full.theta2 = 0.523256
+	123_Full.theta = 0.449594
+	123_K80.kappa = 1.99092
+	stringencyparameter = 1
+
+2016-07-22 14:54:50,587 - INFO - For site 52, fit preferences to natural sequences in 43.9 seconds. The increase in log likelihood was 0.0872, and the RMS difference in preference is 0.004. Here are the differences in preferences:
+	A = 0.000, C = 0.009, E = -0.000, D = -0.000, G = -0.000, F = 0.000, I = 0.000, H = 0.000, K = 0.000, M = -0.004, L = 0.000, N = 0.000, Q = -0.001, P = -0.000, S = 0.007, R = -0.012, T = -0.000, W = -0.001, V = 0.002, Y = 0.000
+
+2016-07-22 14:54:52,590 - INFO - For site 36, fit preferences to natural sequences in 45.6 seconds. The increase in log likelihood was 5.62, and the RMS difference in preference is 0.012. Here are the differences in preferences:
+	A = -0.001, C = -0.000, E = 0.000, D = -0.002, G = -0.000, F = -0.002, I = -0.003, H = -0.010, K = -0.000, M = 0.000, L = 0.047, N = 0.000, Q = -0.002, P = -0.000, S = -0.000, R = -0.001, T = -0.007, W = 0.000, V = -0.001, Y = -0.017
+
+2016-07-22 14:54:54,592 - INFO - For site 37, fit preferences to natural sequences in 47.8 seconds. The increase in log likelihood was 0.362, and the RMS difference in preference is 0.011. Here are the differences in preferences:
+	A = -0.001, C = 0.000, E = -0.000, D = -0.006, G = -0.001, F = -0.000, I = 0.000, H = -0.000, K = 0.044, M = -0.006, L = -0.007, N = -0.005, Q = -0.002, P = -0.000, S = 0.000, R = -0.019, T = -0.000, W = 0.004, V = 0.000, Y = 0.000
+
+2016-07-22 14:54:59,597 - INFO - For site 24, fit preferences to natural sequences in 52.4 seconds. The increase in log likelihood was 0.0844, and the RMS difference in preference is 0.005. Here are the differences in preferences:
+	A = -0.000, C = -0.000, E = 0.000, D = 0.000, G = -0.000, F = -0.002, I = -0.010, H = 0.000, K = -0.003, M = 0.002, L = 0.020, N = -0.000, Q = -0.001, P = 0.000, S = 0.000, R = -0.000, T = -0.002, W = 0.000, V = -0.004, Y = 0.000
+
+2016-07-22 14:55:06,607 - INFO - For site 38, fit preferences to natural sequences in 59.8 seconds. The increase in log likelihood was 0.394, and the RMS difference in preference is 0.012. Here are the differences in preferences:
+	A = -0.011, C = -0.005, E = 0.000, D = -0.000, G = 0.000, F = 0.005, I = -0.006, H = 0.000, K = -0.001, M = -0.015, L = -0.007, N = 0.000, Q = 0.000, P = 0.000, S = 0.000, R = 0.000, T = -0.003, W = 0.000, V = 0.050, Y = -0.007
+
+2016-07-22 14:55:12,614 - INFO - For site 56, fit preferences to natural sequences in 65.5 seconds. The increase in log likelihood was 1.41, and the RMS difference in preference is 0.023. Here are the differences in preferences:
+	A = -0.031, C = -0.008, E = -0.026, D = -0.042, G = 0.056, F = 0.021, I = -0.004, H = 0.021, K = 0.000, M = 0.028, L = -0.011, N = 0.019, Q = 0.020, P = 0.000, S = -0.010, R = -0.030, T = -0.001, W = -0.000, V = -0.002, Y = -0.001
+
+2016-07-22 14:55:18,620 - INFO - For site 41, fit preferences to natural sequences in 71.8 seconds. The increase in log likelihood was 0.458, and the RMS difference in preference is 0.012. Here are the differences in preferences:
+	A = -0.017, C = -0.000, E = -0.001, D = 0.000, G = -0.000, F = 0.000, I = -0.004, H = 0.012, K = -0.004, M = 0.010, L = -0.006, N = -0.000, Q = -0.006, P = -0.022, S = -0.003, R = -0.002, T = 0.045, W = -0.000, V = 0.000, Y = -0.002
+
+2016-07-22 14:55:27,629 - INFO - For site 28, fit preferences to natural sequences in 80.4 seconds. The increase in log likelihood was 0.394, and the RMS difference in preference is 0.011. Here are the differences in preferences:
+	A = -0.002, C = 0.000, E = -0.005, D = -0.016, G = 0.034, F = 0.008, I = -0.007, H = -0.001, K = 0.003, M = 0.009, L = 0.000, N = 0.005, Q = 0.006, P = -0.002, S = -0.017, R = -0.015, T = -0.004, W = 0.008, V = -0.013, Y = 0.007
+
+2016-07-22 14:55:28,633 - INFO - For site 39, fit preferences to natural sequences in 81.4 seconds. The increase in log likelihood was 0.355, and the RMS difference in preference is 0.011. Here are the differences in preferences:
+	A = -0.000, C = 0.005, E = -0.002, D = -0.000, G = 0.001, F = 0.004, I = -0.000, H = 0.002, K = 0.039, M = 0.000, L = 0.002, N = -0.024, Q = -0.007, P = 0.003, S = -0.004, R = -0.013, T = -0.011, W = 0.003, V = 0.001, Y = 0.000
+
+2016-07-22 14:55:29,635 - INFO - For site 11, fit preferences to natural sequences in 82.7 seconds. The increase in log likelihood was 2.07, and the RMS difference in preference is 0.028. Here are the differences in preferences:
+	A = -0.005, C = 0.014, E = 0.050, D = 0.050, G = -0.051, F = -0.007, I = -0.000, H = 0.035, K = -0.010, M = 0.018, L = -0.020, N = -0.003, Q = 0.032, P = -0.012, S = 0.002, R = -0.060, T = -0.014, W = -0.001, V = -0.011, Y = -0.010
+
+2016-07-22 14:55:29,635 - INFO - For site 31, fit preferences to natural sequences in 82.7 seconds. The increase in log likelihood was 0.534, and the RMS difference in preference is 0.014. Here are the differences in preferences:
+	A = 0.004, C = -0.004, E = -0.001, D = 0.000, G = -0.007, F = -0.000, I = -0.032, H = 0.000, K = -0.000, M = 0.000, L = 0.000, N = 0.007, Q = -0.001, P = 0.008, S = 0.050, R = -0.014, T = -0.006, W = 0.001, V = 0.000, Y = -0.006
+
+2016-07-22 14:55:32,639 - INFO - For site 22, fit preferences to natural sequences in 86.0 seconds. The increase in log likelihood was 0.387, and the RMS difference in preference is 0.012. Here are the differences in preferences:
+	A = -0.000, C = 0.004, E = 0.000, D = 0.000, G = 0.003, F = -0.005, I = 0.044, H = 0.004, K = -0.000, M = 0.000, L = -0.012, N = 0.000, Q = -0.000, P = 0.004, S = -0.017, R = -0.000, T = -0.008, W = 0.000, V = -0.017, Y = 0.000
+
+2016-07-22 14:55:32,639 - INFO - For site 42, fit preferences to natural sequences in 86.0 seconds. The increase in log likelihood was 0.222, and the RMS difference in preference is 0.009. Here are the differences in preferences:
+	A = -0.008, C = 0.003, E = -0.002, D = 0.003, G = 0.003, F = 0.000, I = -0.003, H = 0.003, K = -0.018, M = 0.001, L = -0.001, N = 0.000, Q = 0.003, P = -0.000, S = -0.010, R = -0.004, T = 0.030, W = 0.000, V = 0.001, Y = 0.000
+
+2016-07-22 14:55:34,641 - INFO - For site 44, fit preferences to natural sequences in 87.8 seconds. The increase in log likelihood was 0.0672, and the RMS difference in preference is 0.004. Here are the differences in preferences:
+	A = 0.000, C = -0.001, E = 0.000, D = -0.000, G = -0.000, F = -0.007, I = -0.001, H = -0.000, K = -0.001, M = -0.003, L = 0.018, N = 0.000, Q = -0.000, P = -0.000, S = -0.000, R = -0.000, T = 0.000, W = 0.000, V = 0.000, Y = -0.004
+
+2016-07-22 14:55:36,644 - INFO - For site 12, fit preferences to natural sequences in 89.1 seconds. The increase in log likelihood was 2.02, and the RMS difference in preference is 0.029. Here are the differences in preferences:
+	A = -0.007, C = 0.012, E = -0.029, D = 0.072, G = 0.019, F = 0.014, I = 0.014, H = 0.007, K = 0.012, M = 0.000, L = -0.042, N = -0.017, Q = 0.008, P = 0.048, S = -0.009, R = -0.029, T = -0.000, W = 0.000, V = -0.065, Y = -0.007
+
+2016-07-22 14:55:36,644 - INFO - For site 33, fit preferences to natural sequences in 89.8 seconds. The increase in log likelihood was 0.548, and the RMS difference in preference is 0.016. Here are the differences in preferences:
+	A = -0.008, C = -0.000, E = 0.035, D = -0.002, G = -0.000, F = 0.000, I = 0.002, H = -0.000, K = -0.058, M = 0.009, L = 0.006, N = 0.005, Q = -0.003, P = 0.008, S = 0.000, R = 0.003, T = 0.000, W = 0.000, V = -0.003, Y = 0.005
+
+2016-07-22 14:55:42,651 - INFO - For site 50, fit preferences to natural sequences in 95.8 seconds. The increase in log likelihood was 0.809, and the RMS difference in preference is 0.017. Here are the differences in preferences:
+	A = -0.008, C = -0.005, E = 0.000, D = 0.002, G = 0.005, F = -0.013, I = -0.002, H = 0.001, K = 0.002, M = 0.001, L = -0.015, N = -0.002, Q = -0.001, P = -0.001, S = 0.068, R = -0.003, T = -0.029, W = 0.002, V = -0.001, Y = -0.001
+
+2016-07-22 14:55:45,654 - INFO - For site 15, fit preferences to natural sequences in 99.0 seconds. The increase in log likelihood was 3.33, and the RMS difference in preference is 0.054. Here are the differences in preferences:
+	A = -0.019, C = 0.007, E = 0.027, D = 0.029, G = -0.079, F = 0.008, I = -0.011, H = -0.005, K = 0.214, M = -0.000, L = -0.043, N = -0.014, Q = -0.010, P = -0.003, S = -0.033, R = -0.020, T = -0.002, W = -0.001, V = -0.023, Y = -0.020
+
+2016-07-22 14:55:46,656 - INFO - For site 7, fit preferences to natural sequences in 99.8 seconds. The increase in log likelihood was 2.03, and the RMS difference in preference is 0.033. Here are the differences in preferences:
+	A = -0.004, C = 0.006, E = -0.011, D = 0.000, G = -0.005, F = 0.008, I = -0.005, H = 0.007, K = 0.095, M = -0.000, L = -0.032, N = 0.053, Q = -0.004, P = -0.000, S = -0.011, R = -0.092, T = -0.017, W = 0.012, V = -0.003, Y = 0.004
+
+2016-07-22 14:55:47,657 - INFO - For site 17, fit preferences to natural sequences in 100.5 seconds. The increase in log likelihood was 1.73, and the RMS difference in preference is 0.025. Here are the differences in preferences:
+	A = -0.015, C = -0.023, E = 0.032, D = 0.005, G = -0.024, F = 0.010, I = -0.022, H = 0.006, K = 0.023, M = 0.079, L = -0.035, N = -0.011, Q = -0.003, P = -0.008, S = -0.009, R = 0.003, T = -0.021, W = 0.015, V = -0.011, Y = 0.009
+
+2016-07-22 14:55:48,659 - INFO - For site 27, fit preferences to natural sequences in 101.8 seconds. The increase in log likelihood was 0.627, and the RMS difference in preference is 0.014. Here are the differences in preferences:
+	A = 0.000, C = 0.002, E = -0.000, D = 0.001, G = -0.000, F = -0.006, I = 0.033, H = 0.002, K = -0.002, M = -0.012, L = -0.018, N = -0.013, Q = 0.001, P = 0.000, S = -0.001, R = -0.001, T = 0.036, W = 0.004, V = -0.025, Y = -0.001
+
+2016-07-22 14:55:50,661 - INFO - For site 5, fit preferences to natural sequences in 103.3 seconds. The increase in log likelihood was 3.18, and the RMS difference in preference is 0.056. Here are the differences in preferences:
+	A = -0.019, C = 0.000, E = 0.239, D = -0.024, G = -0.044, F = -0.003, I = 0.000, H = -0.006, K = -0.030, M = 0.000, L = -0.020, N = -0.005, Q = -0.011, P = -0.009, S = -0.014, R = -0.016, T = -0.012, W = 0.000, V = -0.025, Y = -0.002
+
+2016-07-22 14:55:50,661 - INFO - For site 18, fit preferences to natural sequences in 103.6 seconds. The increase in log likelihood was 2.1, and the RMS difference in preference is 0.029. Here are the differences in preferences:
+	A = -0.052, C = -0.003, E = 0.029, D = 0.070, G = 0.018, F = 0.015, I = 0.004, H = 0.007, K = 0.027, M = 0.021, L = -0.032, N = -0.007, Q = 0.002, P = -0.000, S = -0.007, R = -0.050, T = -0.024, W = 0.021, V = -0.044, Y = 0.005
+
+2016-07-22 14:55:50,662 - INFO - For site 55, fit preferences to natural sequences in 104.1 seconds. The increase in log likelihood was 1.34, and the RMS difference in preference is 0.022. Here are the differences in preferences:
+	A = 0.007, C = -0.004, E = -0.017, D = -0.001, G = 0.017, F = 0.005, I = -0.005, H = -0.035, K = -0.023, M = -0.002, L = -0.000, N = -0.006, Q = 0.083, P = 0.001, S = -0.008, R = -0.018, T = 0.008, W = -0.001, V = 0.008, Y = -0.008
+
+2016-07-22 14:55:54,666 - INFO - For site 29, fit preferences to natural sequences in 107.8 seconds. The increase in log likelihood was 1.28, and the RMS difference in preference is 0.021. Here are the differences in preferences:
+	A = 0.004, C = -0.003, E = -0.018, D = -0.002, G = 0.015, F = 0.008, I = -0.002, H = -0.025, K = -0.023, M = -0.003, L = -0.003, N = -0.005, Q = 0.081, P = -0.004, S = 0.011, R = -0.021, T = 0.000, W = -0.002, V = 0.001, Y = -0.010
+
+2016-07-22 14:55:56,668 - INFO - For site 10, fit preferences to natural sequences in 109.8 seconds. The increase in log likelihood was 3.1, and the RMS difference in preference is 0.034. Here are the differences in preferences:
+	A = 0.036, C = -0.038, E = -0.004, D = -0.002, G = 0.040, F = 0.024, I = -0.016, H = 0.021, K = 0.019, M = 0.029, L = -0.071, N = 0.027, Q = 0.022, P = -0.050, S = -0.011, R = -0.051, T = 0.025, W = 0.032, V = -0.054, Y = 0.022
+
+2016-07-22 14:55:56,668 - INFO - For site 19, fit preferences to natural sequences in 109.8 seconds. The increase in log likelihood was 2.44, and the RMS difference in preference is 0.037. Here are the differences in preferences:
+	A = -0.012, C = -0.001, E = -0.034, D = -0.002, G = 0.153, F = -0.001, I = -0.005, H = -0.002, K = -0.005, M = 0.000, L = -0.006, N = -0.004, Q = -0.002, P = -0.001, S = -0.008, R = -0.050, T = -0.004, W = -0.001, V = -0.013, Y = -0.002
+
+2016-07-22 14:55:57,669 - INFO - For site 4, fit preferences to natural sequences in 111.0 seconds. The increase in log likelihood was 3.14, and the RMS difference in preference is 0.031. Here are the differences in preferences:
+	A = -0.009, C = 0.002, E = 0.067, D = -0.000, G = -0.003, F = 0.002, I = -0.002, H = -0.026, K = 0.005, M = -0.007, L = -0.021, N = -0.001, Q = -0.010, P = 0.001, S = -0.010, R = -0.075, T = 0.089, W = 0.004, V = -0.005, Y = 0.001
+
+2016-07-22 14:55:57,670 - INFO - For site 58, fit preferences to natural sequences in 65.3 seconds. The increase in log likelihood was 0.442, and the RMS difference in preference is 0.013. Here are the differences in preferences:
+	A = -0.010, C = 0.000, E = 0.005, D = -0.000, G = -0.002, F = 0.000, I = -0.000, H = 0.000, K = 0.007, M = 0.008, L = 0.021, N = 0.000, Q = -0.024, P = 0.032, S = -0.011, R = -0.027, T = -0.000, W = 0.000, V = 0.000, Y = -0.000
+
+2016-07-22 14:55:59,672 - INFO - For site 16, fit preferences to natural sequences in 112.7 seconds. The increase in log likelihood was 1.94, and the RMS difference in preference is 0.021. Here are the differences in preferences:
+	A = -0.002, C = 0.001, E = -0.018, D = 0.068, G = -0.004, F = 0.001, I = -0.005, H = 0.000, K = 0.037, M = -0.009, L = -0.007, N = -0.015, Q = -0.036, P = -0.001, S = -0.007, R = 0.020, T = -0.020, W = 0.002, V = -0.004, Y = -0.000
+
+2016-07-22 14:56:02,675 - INFO - For site 43, fit preferences to natural sequences in 115.8 seconds. The increase in log likelihood was 1.74, and the RMS difference in preference is 0.024. Here are the differences in preferences:
+	A = 0.001, C = 0.004, E = 0.001, D = -0.008, G = 0.001, F = 0.004, I = -0.000, H = 0.081, K = -0.001, M = 0.005, L = -0.016, N = -0.030, Q = 0.034, P = -0.007, S = -0.004, R = -0.042, T = -0.001, W = 0.006, V = 0.000, Y = -0.029
+
+2016-07-22 14:56:03,676 - INFO - For site 9, fit preferences to natural sequences in 116.7 seconds. The increase in log likelihood was 1.66, and the RMS difference in preference is 0.028. Here are the differences in preferences:
+	A = -0.007, C = -0.000, E = 0.001, D = 0.002, G = 0.002, F = -0.011, I = 0.000, H = 0.002, K = 0.000, M = 0.004, L = -0.045, N = 0.001, Q = 0.002, P = -0.043, S = 0.107, R = -0.002, T = -0.015, W = 0.004, V = 0.001, Y = -0.003
+
+2016-07-22 14:56:03,676 - INFO - For site 46, fit preferences to natural sequences in 117.0 seconds. The increase in log likelihood was 1.21, and the RMS difference in preference is 0.023. Here are the differences in preferences:
+	A = 0.001, C = -0.000, E = -0.000, D = 0.003, G = -0.000, F = 0.003, I = -0.006, H = 0.003, K = 0.090, M = -0.002, L = -0.002, N = -0.042, Q = -0.008, P = 0.000, S = -0.002, R = -0.021, T = -0.024, W = 0.005, V = 0.001, Y = 0.002
+
+2016-07-22 14:56:05,679 - INFO - For site 21, fit preferences to natural sequences in 118.4 seconds. The increase in log likelihood was 6.58, and the RMS difference in preference is 0.134. Here are the differences in preferences:
+	A = -0.018, C = -0.101, E = -0.006, D = -0.007, G = -0.016, F = -0.016, I = -0.042, H = -0.046, K = -0.010, M = 0.012, L = -0.029, N = -0.038, Q = -0.004, P = -0.038, S = -0.071, R = -0.038, T = -0.082, W = 0.011, V = -0.029, Y = 0.569
+
+2016-07-22 14:56:14,688 - INFO - For site 34, fit preferences to natural sequences in 128.0 seconds. The increase in log likelihood was 0.193, and the RMS difference in preference is 0.008. Here are the differences in preferences:
+	A = 0.010, C = 0.001, E = 0.000, D = 0.000, G = 0.000, F = -0.008, I = 0.027, H = -0.001, K = -0.000, M = -0.007, L = -0.002, N = -0.000, Q = -0.000, P = 0.007, S = -0.003, R = -0.003, T = -0.011, W = 0.000, V = -0.008, Y = -0.001
+
+2016-07-22 14:56:15,689 - INFO - For site 61, fit preferences to natural sequences in 69.0 seconds. The increase in log likelihood was 0.347, and the RMS difference in preference is 0.010. Here are the differences in preferences:
+	A = -0.012, C = -0.003, E = -0.000, D = -0.000, G = -0.001, F = -0.008, I = -0.000, H = 0.000, K = -0.000, M = -0.004, L = -0.013, N = -0.000, Q = -0.001, P = 0.000, S = 0.014, R = -0.007, T = 0.039, W = 0.001, V = -0.000, Y = -0.004
+
+2016-07-22 14:56:18,693 - INFO - For site 77, fit preferences to natural sequences in 29.4 seconds. The increase in log likelihood was 0.118, and the RMS difference in preference is 0.006. Here are the differences in preferences:
+	A = -0.005, C = 0.008, E = -0.002, D = -0.000, G = 0.000, F = -0.000, I = 0.000, H = -0.000, K = -0.004, M = 0.000, L = 0.000, N = 0.000, Q = -0.000, P = 0.019, S = -0.000, R = -0.015, T = -0.000, W = 0.000, V = 0.000, Y = 0.000
+
+2016-07-22 14:56:24,699 - INFO - For site 51, fit preferences to natural sequences in 137.4 seconds. The increase in log likelihood was 9.29, and the RMS difference in preference is 0.021. Here are the differences in preferences:
+	A = 0.008, C = -0.000, E = 0.001, D = -0.000, G = 0.008, F = -0.045, I = -0.009, H = 0.055, K = -0.005, M = 0.001, L = 0.032, N = -0.009, Q = 0.001, P = 0.008, S = 0.006, R = 0.014, T = 0.003, W = -0.041, V = -0.001, Y = -0.026
+
+2016-07-22 14:56:25,700 - INFO - For site 13, fit preferences to natural sequences in 138.6 seconds. The increase in log likelihood was 3.15, and the RMS difference in preference is 0.030. Here are the differences in preferences:
+	A = -0.016, C = -0.012, E = 0.059, D = 0.017, G = 0.002, F = -0.004, I = 0.005, H = -0.005, K = 0.021, M = -0.017, L = -0.007, N = 0.013, Q = 0.019, P = -0.034, S = 0.016, R = -0.079, T = -0.013, W = -0.039, V = 0.051, Y = 0.023
+
+2016-07-22 14:56:26,702 - INFO - For site 40, fit preferences to natural sequences in 139.3 seconds. The increase in log likelihood was 4.2, and the RMS difference in preference is 0.069. Here are the differences in preferences:
+	A = 0.000, C = -0.005, E = -0.008, D = -0.006, G = -0.006, F = -0.000, I = -0.085, H = -0.005, K = -0.022, M = 0.288, L = -0.036, N = -0.009, Q = 0.001, P = -0.006, S = -0.013, R = -0.025, T = -0.026, W = -0.003, V = -0.027, Y = -0.007
+
+2016-07-22 14:56:26,702 - INFO - For site 80, fit preferences to natural sequences in 36.0 seconds. The increase in log likelihood was 0.00763, and the RMS difference in preference is 0.002. Here are the differences in preferences:
+	A = -0.000, C = 0.000, E = 0.000, D = -0.001, G = 0.000, F = 0.000, I = 0.000, H = -0.000, K = -0.002, M = -0.002, L = 0.006, N = -0.001, Q = 0.000, P = 0.000, S = 0.000, R = 0.000, T = 0.000, W = -0.000, V = 0.000, Y = -0.001
+
+2016-07-22 14:56:31,708 - INFO - For site 49, fit preferences to natural sequences in 144.2 seconds. The increase in log likelihood was 0.941, and the RMS difference in preference is 0.018. Here are the differences in preferences:
+	A = -0.001, C = 0.008, E = 0.045, D = -0.037, G = -0.011, F = 0.005, I = 0.007, H = 0.007, K = -0.049, M = 0.005, L = 0.005, N = 0.004, Q = -0.010, P = 0.010, S = -0.002, R = -0.000, T = 0.009, W = 0.007, V = -0.006, Y = 0.004
+
+2016-07-22 14:56:32,709 - INFO - For site 14, fit preferences to natural sequences in 145.6 seconds. The increase in log likelihood was 3.23, and the RMS difference in preference is 0.035. Here are the differences in preferences:
+	A = -0.018, C = 0.012, E = 0.076, D = 0.001, G = 0.004, F = 0.018, I = 0.004, H = 0.013, K = 0.048, M = 0.022, L = -0.065, N = 0.012, Q = 0.011, P = 0.000, S = -0.022, R = -0.053, T = -0.011, W = 0.013, V = -0.078, Y = 0.012
+
+2016-07-22 14:56:32,710 - INFO - For site 65, fit preferences to natural sequences in 63.9 seconds. The increase in log likelihood was 0.458, and the RMS difference in preference is 0.013. Here are the differences in preferences:
+	A = -0.000, C = -0.000, E = 0.000, D = -0.001, G = 0.000, F = -0.022, I = -0.011, H = -0.005, K = 0.000, M = 0.000, L = 0.052, N = -0.001, Q = 0.000, P = -0.000, S = 0.000, R = -0.000, T = -0.004, W = 0.000, V = -0.009, Y = -0.000
+
+2016-07-22 14:56:34,712 - INFO - For site 53, fit preferences to natural sequences in 147.8 seconds. The increase in log likelihood was 1.72, and the RMS difference in preference is 0.032. Here are the differences in preferences:
+	A = -0.002, C = 0.004, E = -0.016, D = -0.005, G = 0.006, F = -0.003, I = 0.004, H = -0.024, K = -0.030, M = 0.002, L = -0.012, N = -0.002, Q = 0.134, P = -0.009, S = -0.009, R = -0.024, T = -0.003, W = -0.002, V = -0.001, Y = -0.005
+
+2016-07-22 14:56:35,713 - INFO - For site 45, fit preferences to natural sequences in 149.0 seconds. The increase in log likelihood was 0.823, and the RMS difference in preference is 0.016. Here are the differences in preferences:
+	A = 0.001, C = 0.003, E = -0.022, D = 0.001, G = 0.002, F = 0.006, I = -0.004, H = 0.001, K = 0.049, M = -0.024, L = 0.002, N = -0.033, Q = -0.007, P = 0.009, S = -0.006, R = 0.017, T = -0.004, W = 0.002, V = 0.004, Y = 0.003
+
+2016-07-22 14:56:36,715 - INFO - For site 82, fit preferences to natural sequences in 40.1 seconds. The increase in log likelihood was 0.363, and the RMS difference in preference is 0.011. Here are the differences in preferences:
+	A = -0.001, C = -0.007, E = -0.003, D = -0.001, G = -0.006, F = -0.000, I = 0.000, H = -0.007, K = 0.000, M = 0.046, L = -0.013, N = -0.000, Q = 0.000, P = -0.000, S = -0.001, R = -0.001, T = 0.000, W = -0.000, V = -0.000, Y = -0.005
+
+2016-07-22 14:56:37,716 - INFO - For site 67, fit preferences to natural sequences in 67.5 seconds. The increase in log likelihood was 3.35, and the RMS difference in preference is 0.044. Here are the differences in preferences:
+	A = -0.041, C = 0.017, E = 0.155, D = -0.036, G = -0.078, F = 0.017, I = 0.000, H = -0.000, K = -0.004, M = 0.028, L = -0.056, N = 0.014, Q = -0.014, P = -0.001, S = -0.001, R = -0.000, T = 0.000, W = 0.026, V = -0.012, Y = -0.012
+
+2016-07-22 14:56:38,718 - INFO - For site 68, fit preferences to natural sequences in 65.9 seconds. The increase in log likelihood was 0.0786, and the RMS difference in preference is 0.005. Here are the differences in preferences:
+	A = 0.000, C = -0.003, E = -0.000, D = -0.003, G = 0.014, F = 0.000, I = 0.000, H = 0.000, K = 0.000, M = 0.000, L = 0.004, N = -0.001, Q = 0.001, P = 0.005, S = -0.014, R = -0.001, T = -0.000, W = -0.001, V = -0.000, Y = 0.000
+
+2016-07-22 14:56:41,721 - INFO - For site 6, fit preferences to natural sequences in 154.5 seconds. The increase in log likelihood was 1.75, and the RMS difference in preference is 0.026. Here are the differences in preferences:
+	A = 0.062, C = 0.010, E = -0.022, D = 0.006, G = -0.015, F = 0.009, I = -0.006, H = 0.009, K = -0.001, M = 0.010, L = -0.007, N = 0.002, Q = 0.008, P = -0.011, S = -0.052, R = -0.009, T = 0.047, W = 0.012, V = -0.055, Y = 0.004
+
+2016-07-22 14:56:42,722 - INFO - For site 59, fit preferences to natural sequences in 108.3 seconds. The increase in log likelihood was 2.99, and the RMS difference in preference is 0.032. Here are the differences in preferences:
+	A = 0.042, C = 0.014, E = 0.011, D = -0.011, G = -0.004, F = 0.017, I = -0.061, H = 0.016, K = 0.001, M = 0.058, L = -0.008, N = 0.016, Q = -0.000, P = -0.012, S = 0.046, R = -0.068, T = -0.036, W = -0.003, V = -0.035, Y = 0.016
+
+2016-07-22 14:56:45,729 - INFO - For site 23, fit preferences to natural sequences in 158.9 seconds. The increase in log likelihood was 1.68, and the RMS difference in preference is 0.027. Here are the differences in preferences:
+	A = 0.003, C = 0.002, E = -0.049, D = 0.001, G = 0.005, F = 0.006, I = -0.010, H = 0.001, K = 0.103, M = 0.002, L = -0.000, N = -0.032, Q = -0.007, P = 0.009, S = -0.006, R = -0.024, T = -0.009, W = 0.002, V = 0.001, Y = 0.003
+
+2016-07-22 14:56:46,730 - INFO - For site 47, fit preferences to natural sequences in 159.3 seconds. The increase in log likelihood was 0.0237, and the RMS difference in preference is 0.003. Here are the differences in preferences:
+	A = 0.000, C = 0.000, E = -0.000, D = 0.000, G = -0.000, F = -0.000, I = -0.005, H = -0.000, K = 0.000, M = 0.000, L = 0.010, N = -0.000, Q = 0.000, P = -0.000, S = -0.000, R = -0.000, T = 0.001, W = 0.000, V = -0.004, Y = -0.000
+
+2016-07-22 14:56:47,732 - INFO - For site 88, fit preferences to natural sequences in 44.4 seconds. The increase in log likelihood was 5.37, and the RMS difference in preference is 0.017. Here are the differences in preferences:
+	A = -0.000, C = 0.000, E = -0.001, D = 0.000, G = -0.000, F = -0.001, I = -0.018, H = -0.001, K = -0.000, M = -0.015, L = -0.028, N = 0.000, Q = -0.000, P = -0.000, S = -0.002, R = -0.000, T = 0.067, W = 0.000, V = 0.000, Y = -0.000
+
+2016-07-22 14:56:48,733 - INFO - For site 35, fit preferences to natural sequences in 161.4 seconds. The increase in log likelihood was 3.8, and the RMS difference in preference is 0.073. Here are the differences in preferences:
+	A = -0.006, C = 0.001, E = -0.002, D = -0.019, G = -0.006, F = 0.001, I = -0.006, H = 0.305, K = -0.004, M = 0.003, L = -0.033, N = -0.045, Q = -0.053, P = -0.003, S = -0.013, R = -0.082, T = -0.009, W = 0.004, V = -0.007, Y = -0.026
+
+2016-07-22 14:56:55,743 - INFO - For site 25, fit preferences to natural sequences in 168.7 seconds. The increase in log likelihood was 0.586, and the RMS difference in preference is 0.014. Here are the differences in preferences:
+	A = 0.003, C = -0.001, E = -0.001, D = 0.004, G = 0.010, F = 0.003, I = -0.016, H = -0.006, K = 0.043, M = 0.003, L = 0.012, N = -0.023, Q = -0.014, P = 0.010, S = -0.007, R = -0.016, T = -0.007, W = 0.002, V = -0.003, Y = 0.003
+
+2016-07-22 14:56:56,745 - INFO - For site 30, fit preferences to natural sequences in 170.0 seconds. The increase in log likelihood was 1.07, and the RMS difference in preference is 0.023. Here are the differences in preferences:
+	A = -0.004, C = 0.000, E = -0.052, D = 0.087, G = -0.010, F = 0.002, I = 0.000, H = -0.012, K = 0.003, M = 0.002, L = 0.001, N = -0.017, Q = 0.001, P = 0.005, S = 0.000, R = -0.003, T = 0.001, W = -0.000, V = -0.000, Y = -0.004
+
+2016-07-22 14:56:59,748 - INFO - For site 26, fit preferences to natural sequences in 172.5 seconds. The increase in log likelihood was 0.162, and the RMS difference in preference is 0.007. Here are the differences in preferences:
+	A = -0.005, C = 0.001, E = -0.000, D = -0.000, G = -0.002, F = -0.003, I = -0.015, H = 0.002, K = -0.000, M = -0.000, L = -0.009, N = 0.000, Q = 0.001, P = 0.005, S = 0.000, R = -0.000, T = -0.001, W = 0.000, V = 0.026, Y = 0.000
+
+2016-07-22 14:57:04,753 - INFO - For site 73, fit preferences to natural sequences in 82.2 seconds. The increase in log likelihood was 0.0674, and the RMS difference in preference is 0.004. Here are the differences in preferences:
+	A = 0.000, C = 0.001, E = -0.000, D = 0.005, G = -0.000, F = -0.001, I = 0.000, H = -0.008, K = 0.000, M = -0.002, L = -0.000, N = -0.005, Q = -0.001, P = 0.000, S = 0.000, R = 0.000, T = 0.013, W = 0.000, V = 0.000, Y = -0.002
+
+2016-07-22 14:57:07,757 - INFO - For site 81, fit preferences to natural sequences in 72.8 seconds. The increase in log likelihood was 1.22, and the RMS difference in preference is 0.020. Here are the differences in preferences:
+	A = -0.010, C = 0.006, E = -0.012, D = -0.006, G = 0.080, F = 0.005, I = -0.000, H = 0.006, K = -0.007, M = 0.010, L = -0.015, N = -0.000, Q = 0.005, P = 0.000, S = -0.013, R = -0.016, T = 0.000, W = -0.016, V = -0.005, Y = -0.010
+
+2016-07-22 14:57:08,759 - INFO - For site 76, fit preferences to natural sequences in 81.3 seconds. The increase in log likelihood was 0.0466, and the RMS difference in preference is 0.004. Here are the differences in preferences:
+	A = 0.000, C = -0.001, E = 0.000, D = 0.000, G = 0.002, F = 0.000, I = 0.000, H = 0.000, K = 0.000, M = 0.000, L = 0.000, N = 0.000, Q = 0.000, P = -0.001, S = -0.014, R = 0.003, T = 0.009, W = 0.002, V = 0.000, Y = 0.000
+
+2016-07-22 14:57:10,761 - INFO - For site 32, fit preferences to natural sequences in 183.8 seconds. The increase in log likelihood was 1.96, and the RMS difference in preference is 0.032. Here are the differences in preferences:
+	A = 0.001, C = -0.027, E = 0.006, D = -0.001, G = -0.016, F = 0.007, I = -0.008, H = 0.007, K = 0.007, M = 0.011, L = -0.004, N = -0.013, Q = 0.009, P = -0.001, S = 0.063, R = -0.108, T = 0.050, W = 0.011, V = -0.001, Y = 0.007
+
+2016-07-22 14:57:10,762 - INFO - For site 96, fit preferences to natural sequences in 44.3 seconds. The increase in log likelihood was 0.0456, and the RMS difference in preference is 0.003. Here are the differences in preferences:
+	A = -0.005, C = -0.001, E = 0.000, D = -0.000, G = 0.011, F = 0.004, I = 0.000, H = -0.000, K = 0.000, M = 0.000, L = -0.004, N = -0.001, Q = 0.003, P = 0.002, S = -0.006, R = -0.000, T = -0.000, W = 0.000, V = -0.004, Y = 0.000
+
+2016-07-22 14:57:12,764 - INFO - For site 57, fit preferences to natural sequences in 142.0 seconds. The increase in log likelihood was 0.341, and the RMS difference in preference is 0.010. Here are the differences in preferences:
+	A = -0.013, C = 0.003, E = 0.003, D = -0.000, G = -0.001, F = -0.008, I = 0.003, H = 0.000, K = -0.010, M = -0.001, L = -0.008, N = -0.001, Q = -0.002, P = 0.000, S = 0.003, R = -0.006, T = 0.010, W = -0.003, V = 0.038, Y = -0.008
+
+2016-07-22 14:57:14,766 - INFO - For site 69, fit preferences to natural sequences in 101.4 seconds. The increase in log likelihood was 1.05, and the RMS difference in preference is 0.019. Here are the differences in preferences:
+	A = 0.002, C = -0.004, E = -0.014, D = -0.005, G = 0.008, F = -0.002, I = 0.008, H = -0.017, K = -0.021, M = 0.004, L = -0.007, N = -0.008, Q = 0.074, P = -0.004, S = -0.008, R = -0.021, T = 0.002, W = -0.000, V = 0.011, Y = -0.000
+
+2016-07-22 14:57:15,768 - INFO - For site 75, fit preferences to natural sequences in 88.5 seconds. The increase in log likelihood was 2.44, and the RMS difference in preference is 0.017. Here are the differences in preferences:
+	A = -0.015, C = 0.007, E = -0.002, D = -0.000, G = 0.000, F = -0.002, I = -0.016, H = 0.008, K = -0.009, M = 0.011, L = 0.038, N = 0.002, Q = 0.027, P = -0.013, S = -0.011, R = 0.036, T = -0.026, W = -0.009, V = -0.014, Y = -0.012
+
+2016-07-22 14:57:17,771 - INFO - For site 86, fit preferences to natural sequences in 77.8 seconds. The increase in log likelihood was 1.24, and the RMS difference in preference is 0.026. Here are the differences in preferences:
+	A = -0.006, C = -0.004, E = -0.030, D = 0.109, G = -0.013, F = 0.000, I = -0.000, H = -0.000, K = -0.000, M = -0.004, L = 0.000, N = -0.026, Q = -0.000, P = -0.001, S = -0.009, R = -0.000, T = -0.001, W = 0.000, V = -0.001, Y = -0.014
+
+2016-07-22 14:57:20,774 - INFO - For site 84, fit preferences to natural sequences in 82.9 seconds. The increase in log likelihood was 2.65, and the RMS difference in preference is 0.032. Here are the differences in preferences:
+	A = -0.029, C = 0.007, E = 0.061, D = 0.087, G = -0.080, F = 0.011, I = -0.016, H = -0.000, K = -0.013, M = 0.015, L = -0.003, N = -0.005, Q = 0.003, P = -0.000, S = -0.005, R = -0.013, T = -0.008, W = 0.014, V = -0.027, Y = 0.001
+
+2016-07-22 14:57:23,778 - INFO - For site 8, fit preferences to natural sequences in 197.2 seconds. The increase in log likelihood was 0.685, and the RMS difference in preference is 0.015. Here are the differences in preferences:
+	A = -0.012, C = -0.001, E = 0.001, D = 0.001, G = -0.002, F = -0.002, I = -0.003, H = -0.011, K = -0.000, M = 0.001, L = -0.020, N = -0.002, Q = -0.003, P = 0.053, S = 0.021, R = -0.015, T = -0.007, W = 0.002, V = 0.002, Y = -0.003
+
+2016-07-22 14:57:25,781 - INFO - For site 83, fit preferences to natural sequences in 88.7 seconds. The increase in log likelihood was 3.39, and the RMS difference in preference is 0.064. Here are the differences in preferences:
+	A = -0.022, C = -0.002, E = 0.272, D = -0.050, G = -0.034, F = -0.003, I = -0.006, H = -0.004, K = -0.055, M = 0.001, L = -0.020, N = -0.002, Q = -0.007, P = 0.000, S = -0.013, R = -0.016, T = -0.015, W = 0.000, V = -0.023, Y = -0.000
+
+2016-07-22 14:57:27,784 - INFO - For site 20, fit preferences to natural sequences in 201.1 seconds. The increase in log likelihood was 4.16, and the RMS difference in preference is 0.070. Here are the differences in preferences:
+	A = -0.039, C = -0.003, E = 0.274, D = 0.044, G = -0.083, F = 0.010, I = 0.001, H = 0.002, K = -0.078, M = 0.015, L = -0.053, N = 0.001, Q = -0.002, P = -0.020, S = -0.012, R = -0.024, T = 0.000, W = 0.014, V = -0.055, Y = 0.008
+
+2016-07-22 14:57:27,785 - INFO - For site 70, fit preferences to natural sequences in 112.6 seconds. The increase in log likelihood was 1.62, and the RMS difference in preference is 0.026. Here are the differences in preferences:
+	A = 0.004, C = -0.002, E = -0.006, D = -0.002, G = -0.016, F = 0.005, I = -0.015, H = -0.000, K = -0.025, M = -0.002, L = 0.000, N = -0.008, Q = -0.000, P = 0.001, S = -0.030, R = 0.107, T = -0.010, W = -0.002, V = -0.001, Y = 0.001
+
+2016-07-22 14:57:27,785 - INFO - For site 78, fit preferences to natural sequences in 97.9 seconds. The increase in log likelihood was 1.79, and the RMS difference in preference is 0.030. Here are the differences in preferences:
+	A = 0.003, C = 0.003, E = -0.020, D = -0.001, G = 0.004, F = -0.001, I = -0.013, H = -0.001, K = 0.117, M = -0.002, L = 0.012, N = -0.028, Q = -0.024, P = 0.007, S = -0.006, R = -0.050, T = -0.003, W = -0.000, V = 0.004, Y = -0.002
+
+2016-07-22 14:57:28,786 - INFO - For site 2, fit preferences to natural sequences in 202.2 seconds. The increase in log likelihood was 13.2, and the RMS difference in preference is 0.143. Here are the differences in preferences:
+	A = -0.059, C = -0.046, E = -0.035, D = -0.006, G = -0.051, F = 0.608, I = -0.057, H = 0.000, K = 0.025, M = 0.035, L = -0.053, N = -0.033, Q = -0.045, P = -0.054, S = -0.041, R = -0.062, T = -0.053, W = 0.023, V = -0.052, Y = -0.046
+
+2016-07-22 14:57:28,787 - INFO - For site 72, fit preferences to natural sequences in 111.9 seconds. The increase in log likelihood was 2.43, and the RMS difference in preference is 0.030. Here are the differences in preferences:
+	A = -0.074, C = 0.006, E = -0.000, D = -0.009, G = -0.008, F = 0.006, I = -0.002, H = 0.005, K = 0.000, M = 0.006, L = -0.001, N = 0.002, Q = 0.005, P = -0.018, S = 0.051, R = -0.001, T = 0.080, W = 0.007, V = -0.059, Y = 0.003
+
+2016-07-22 14:57:29,788 - INFO - For site 74, fit preferences to natural sequences in 103.5 seconds. The increase in log likelihood was 3.51, and the RMS difference in preference is 0.042. Here are the differences in preferences:
+	A = 0.002, C = 0.003, E = 0.001, D = -0.022, G = 0.001, F = 0.003, I = -0.022, H = 0.152, K = -0.072, M = 0.004, L = -0.003, N = 0.041, Q = -0.003, P = 0.002, S = -0.062, R = -0.006, T = -0.014, W = 0.005, V = 0.001, Y = -0.012
+
+2016-07-22 14:57:31,791 - INFO - For site 71, fit preferences to natural sequences in 116.1 seconds. The increase in log likelihood was 9.38, and the RMS difference in preference is 0.017. Here are the differences in preferences:
+	A = 0.000, C = 0.000, E = 0.000, D = -0.000, G = -0.002, F = 0.068, I = -0.015, H = 0.000, K = -0.025, M = 0.000, L = -0.000, N = 0.000, Q = 0.000, P = -0.000, S = -0.000, R = -0.000, T = -0.001, W = 0.000, V = -0.025, Y = 0.000
+
+2016-07-22 14:57:34,795 - INFO - For site 63, fit preferences to natural sequences in 135.7 seconds. The increase in log likelihood was 0.431, and the RMS difference in preference is 0.011. Here are the differences in preferences:
+	A = 0.009, C = 0.003, E = -0.005, D = 0.007, G = -0.001, F = 0.005, I = -0.006, H = -0.001, K = -0.020, M = -0.011, L = 0.008, N = -0.006, Q = 0.001, P = 0.011, S = -0.018, R = 0.030, T = -0.002, W = -0.005, V = 0.006, Y = -0.004
+
+2016-07-22 14:57:36,798 - INFO - For site 54, fit preferences to natural sequences in 209.8 seconds. The increase in log likelihood was 0.297, and the RMS difference in preference is 0.008. Here are the differences in preferences:
+	A = 0.009, C = -0.003, E = -0.003, D = 0.000, G = -0.009, F = -0.002, I = -0.010, H = 0.003, K = -0.022, M = 0.001, L = 0.007, N = 0.001, Q = -0.002, P = 0.011, S = -0.004, R = 0.016, T = -0.001, W = 0.005, V = -0.001, Y = 0.004
+
+2016-07-22 14:57:37,800 - INFO - For site 48, fit preferences to natural sequences in 210.9 seconds. The increase in log likelihood was 0.0761, and the RMS difference in preference is 0.004. Here are the differences in preferences:
+	A = 0.003, C = 0.000, E = 0.000, D = 0.000, G = 0.002, F = 0.001, I = -0.010, H = 0.000, K = -0.004, M = -0.012, L = 0.009, N = -0.000, Q = 0.000, P = 0.003, S = 0.002, R = 0.000, T = 0.001, W = -0.000, V = 0.005, Y = 0.000
+
+2016-07-22 14:57:37,800 - INFO - For site 60, fit preferences to natural sequences in 158.1 seconds. The increase in log likelihood was 0.9, and the RMS difference in preference is 0.016. Here are the differences in preferences:
+	A = -0.015, C = -0.003, E = 0.008, D = -0.004, G = -0.004, F = 0.010, I = -0.000, H = 0.002, K = -0.016, M = -0.000, L = -0.001, N = 0.053, Q = 0.007, P = -0.004, S = 0.016, R = -0.029, T = -0.006, W = 0.014, V = -0.013, Y = -0.015
+
+2016-07-22 14:57:38,801 - INFO - For site 79, fit preferences to natural sequences in 107.8 seconds. The increase in log likelihood was 1.22, and the RMS difference in preference is 0.023. Here are the differences in preferences:
+	A = -0.004, C = 0.006, E = 0.070, D = -0.014, G = -0.010, F = 0.008, I = 0.004, H = 0.002, K = -0.066, M = -0.002, L = 0.002, N = 0.001, Q = -0.018, P = 0.010, S = 0.002, R = 0.008, T = 0.008, W = 0.001, V = -0.004, Y = -0.004
+
+2016-07-22 14:57:39,803 - INFO - For site 94, fit preferences to natural sequences in 75.0 seconds. The increase in log likelihood was 1.09, and the RMS difference in preference is 0.018. Here are the differences in preferences:
+	A = 0.004, C = 0.002, E = -0.010, D = -0.002, G = 0.000, F = 0.004, I = 0.004, H = -0.025, K = -0.014, M = 0.001, L = -0.002, N = -0.004, Q = 0.067, P = -0.003, S = -0.006, R = -0.029, T = 0.008, W = 0.002, V = 0.004, Y = -0.002
+
+2016-07-22 14:57:42,807 - INFO - For site 85, fit preferences to natural sequences in 104.7 seconds. The increase in log likelihood was 2.32, and the RMS difference in preference is 0.038. Here are the differences in preferences:
+	A = -0.008, C = 0.000, E = 0.152, D = -0.018, G = -0.042, F = 0.001, I = 0.002, H = 0.002, K = -0.054, M = 0.001, L = -0.003, N = -0.002, Q = -0.011, P = 0.006, S = -0.007, R = -0.005, T = 0.001, W = 0.002, V = -0.016, Y = -0.001
+
+2016-07-22 14:57:44,809 - INFO - For site 93, fit preferences to natural sequences in 86.4 seconds. The increase in log likelihood was 1.15, and the RMS difference in preference is 0.020. Here are the differences in preferences:
+	A = -0.003, C = 0.002, E = 0.054, D = -0.053, G = -0.028, F = 0.001, I = 0.012, H = -0.002, K = -0.009, M = -0.002, L = 0.020, N = -0.005, Q = -0.011, P = 0.016, S = -0.002, R = 0.008, T = 0.011, W = -0.001, V = -0.006, Y = -0.003
+
+2016-07-22 14:57:45,811 - INFO - For site 95, fit preferences to natural sequences in 80.5 seconds. The increase in log likelihood was 1.61, and the RMS difference in preference is 0.032. Here are the differences in preferences:
+	A = -0.017, C = 0.007, E = -0.000, D = -0.004, G = -0.003, F = -0.002, I = -0.007, H = -0.003, K = -0.023, M = 0.006, L = -0.008, N = -0.007, Q = 0.000, P = -0.001, S = -0.061, R = -0.008, T = 0.126, W = 0.009, V = -0.004, Y = 0.000
+
+2016-07-22 14:57:49,816 - INFO - For site 89, fit preferences to natural sequences in 105.6 seconds. The increase in log likelihood was 1.63, and the RMS difference in preference is 0.028. Here are the differences in preferences:
+	A = -0.019, C = 0.000, E = 0.111, D = -0.042, G = -0.020, F = 0.003, I = -0.001, H = -0.001, K = -0.009, M = 0.004, L = -0.004, N = 0.001, Q = -0.005, P = 0.000, S = -0.004, R = -0.004, T = -0.001, W = 0.005, V = -0.018, Y = 0.002
+
+2016-07-22 14:57:49,816 - INFO - For site 97, fit preferences to natural sequences in 82.3 seconds. The increase in log likelihood was 4.28, and the RMS difference in preference is 0.015. Here are the differences in preferences:
+	A = 0.026, C = 0.004, E = 0.000, D = 0.001, G = -0.016, F = -0.014, I = 0.000, H = -0.000, K = 0.004, M = 0.000, L = -0.036, N = 0.000, Q = 0.000, P = 0.000, S = 0.041, R = -0.001, T = -0.013, W = 0.000, V = -0.003, Y = 0.006
+
+2016-07-22 14:57:50,818 - INFO - For site 62, fit preferences to natural sequences in 158.5 seconds. The increase in log likelihood was 0.661, and the RMS difference in preference is 0.015. Here are the differences in preferences:
+	A = 0.010, C = -0.007, E = 0.003, D = 0.003, G = 0.009, F = -0.014, I = -0.017, H = -0.013, K = 0.003, M = -0.005, L = 0.056, N = 0.001, Q = -0.009, P = 0.000, S = 0.009, R = -0.011, T = -0.003, W = 0.003, V = -0.007, Y = -0.008
+
+2016-07-22 14:57:51,820 - INFO - For site 91, fit preferences to natural sequences in 97.1 seconds. The increase in log likelihood was 0.522, and the RMS difference in preference is 0.012. Here are the differences in preferences:
+	A = 0.006, C = -0.028, E = -0.002, D = -0.018, G = 0.009, F = -0.010, I = 0.009, H = -0.016, K = 0.001, M = -0.001, L = 0.009, N = -0.006, Q = -0.001, P = 0.010, S = -0.000, R = 0.003, T = 0.007, W = -0.002, V = -0.000, Y = 0.030
+
+2016-07-22 14:57:56,826 - INFO - For site 99, fit preferences to natural sequences in 84.0 seconds. The increase in log likelihood was 1.96, and the RMS difference in preference is 0.025. Here are the differences in preferences:
+	A = -0.019, C = -0.013, E = 0.008, D = 0.006, G = -0.052, F = 0.007, I = -0.005, H = 0.004, K = 0.003, M = 0.013, L = 0.009, N = 0.051, Q = 0.007, P = -0.025, S = -0.043, R = 0.010, T = -0.019, W = 0.057, V = -0.012, Y = 0.011
+
+2016-07-22 14:57:58,829 - INFO - For site 64, fit preferences to natural sequences in 151.1 seconds. The increase in log likelihood was 0.26, and the RMS difference in preference is 0.007. Here are the differences in preferences:
+	A = 0.004, C = -0.003, E = 0.002, D = 0.001, G = 0.008, F = -0.006, I = -0.005, H = -0.015, K = 0.002, M = 0.000, L = -0.008, N = 0.001, Q = -0.011, P = 0.009, S = 0.001, R = 0.015, T = 0.008, W = -0.005, V = 0.001, Y = 0.000
+
+2016-07-22 14:58:02,834 - INFO - For site 98, fit preferences to natural sequences in 91.6 seconds. The increase in log likelihood was 3.69, and the RMS difference in preference is 0.036. Here are the differences in preferences:
+	A = 0.022, C = 0.043, E = 0.018, D = 0.007, G = -0.038, F = 0.062, I = -0.032, H = -0.010, K = 0.019, M = 0.051, L = -0.017, N = 0.005, Q = -0.052, P = -0.021, S = -0.056, R = -0.006, T = -0.041, W = 0.034, V = -0.041, Y = 0.052
+
+2016-07-22 14:58:04,837 - INFO - For site 92, fit preferences to natural sequences in 109.1 seconds. The increase in log likelihood was 1.93, and the RMS difference in preference is 0.033. Here are the differences in preferences:
+	A = -0.000, C = -0.001, E = -0.023, D = -0.001, G = -0.002, F = 0.002, I = -0.002, H = -0.032, K = -0.018, M = -0.000, L = -0.009, N = 0.001, Q = 0.140, P = -0.013, S = -0.008, R = -0.026, T = -0.003, W = 0.001, V = -0.003, Y = -0.003
+
+2016-07-22 14:58:08,842 - INFO - For site 101, fit preferences to natural sequences in 93.9 seconds. The increase in log likelihood was 5.77, and the RMS difference in preference is 0.035. Here are the differences in preferences:
+	A = -0.002, C = 0.013, E = -0.032, D = 0.001, G = -0.035, F = -0.011, I = 0.042, H = 0.073, K = 0.011, M = 0.017, L = -0.005, N = 0.015, Q = 0.012, P = -0.006, S = -0.049, R = -0.013, T = 0.035, W = 0.021, V = -0.099, Y = 0.012
+
+2016-07-22 14:58:12,847 - INFO - For site 87, fit preferences to natural sequences in 130.1 seconds. The increase in log likelihood was 2.2, and the RMS difference in preference is 0.041. Here are the differences in preferences:
+	A = -0.019, C = -0.003, E = -0.015, D = -0.011, G = -0.010, F = -0.009, I = -0.018, H = -0.004, K = -0.009, M = -0.018, L = -0.018, N = -0.007, Q = -0.007, P = 0.005, S = -0.011, R = -0.010, T = -0.005, W = -0.002, V = 0.176, Y = -0.008
+
+2016-07-22 14:58:26,866 - INFO - For site 100, fit preferences to natural sequences in 113.7 seconds. The increase in log likelihood was 14.9, and the RMS difference in preference is 0.181. Here are the differences in preferences:
+	A = -0.048, C = -0.037, E = -0.018, D = -0.017, G = -0.033, F = -0.025, I = -0.060, H = -0.032, K = -0.057, M = 0.782, L = -0.060, N = -0.034, Q = -0.022, P = -0.023, S = -0.070, R = -0.036, T = -0.126, W = 0.003, V = -0.060, Y = -0.028
+
+2016-07-22 14:58:31,873 - INFO - For site 66, fit preferences to natural sequences in 182.2 seconds. The increase in log likelihood was 0.4, and the RMS difference in preference is 0.010. Here are the differences in preferences:
+	A = 0.003, C = -0.000, E = 0.001, D = 0.003, G = 0.008, F = 0.012, I = -0.001, H = -0.016, K = 0.002, M = -0.000, L = -0.000, N = 0.000, Q = 0.004, P = 0.007, S = 0.000, R = 0.016, T = 0.008, W = -0.018, V = 0.000, Y = -0.027
+
+2016-07-22 14:58:41,885 - INFO - For site 1, fit preferences to natural sequences in 274.7 seconds. The increase in log likelihood was 11.6, and the RMS difference in preference is 0.163. Here are the differences in preferences:
+	A = -0.045, C = 0.049, E = -0.030, D = 0.695, G = -0.045, F = 0.018, I = -0.040, H = -0.013, K = -0.061, M = -0.089, L = -0.054, N = -0.050, Q = -0.036, P = -0.045, S = -0.054, R = -0.057, T = -0.067, W = 0.024, V = -0.049, Y = -0.051
+
+2016-07-22 14:59:04,912 - INFO - For site 90, fit preferences to natural sequences in 179.1 seconds. The increase in log likelihood was 0.321, and the RMS difference in preference is 0.009. Here are the differences in preferences:
+	A = -0.006, C = -0.008, E = 0.001, D = -0.000, G = 0.002, F = -0.004, I = -0.022, H = -0.000, K = 0.002, M = -0.006, L = 0.002, N = 0.002, Q = 0.001, P = 0.011, S = -0.009, R = 0.009, T = -0.004, W = 0.002, V = 0.027, Y = 0.002
+
+2016-07-22 14:59:55,973 - INFO - For site 3, fit preferences to natural sequences in 348.5 seconds. The increase in log likelihood was 21.2, and the RMS difference in preference is 0.214. Here are the differences in preferences:
+	A = -0.048, C = -0.002, E = -0.045, D = -0.155, G = -0.098, F = 0.917, I = -0.093, H = -0.109, K = -0.007, M = -0.007, L = -0.019, N = -0.062, Q = -0.042, P = -0.018, S = -0.099, R = -0.056, T = -0.003, W = -0.005, V = -0.027, Y = -0.024
+
+2016-07-22 14:59:56,099 - INFO - Writing the differences in preferences to ./phydms_results//SUMO1_identity-ge-0.75_ExpCM_SUMO1_no-cons_penalize-scores-gt1_prefs_diffprefsbysite.txt
+2016-07-22 14:59:56,107 - INFO - Writing the absolute sum of the differential preferences to ./phydms_results//SUMO1_identity-ge-0.75_ExpCM_SUMO1_no-cons_penalize-scores-gt1_prefs_diffprefsbysite_sumabs.txt
+2016-07-22 14:59:56,109 - INFO - Successful completion of phydms

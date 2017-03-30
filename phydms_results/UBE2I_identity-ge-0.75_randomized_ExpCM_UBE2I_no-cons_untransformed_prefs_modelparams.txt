@@ -1,0 +1,6 @@
+123_Full.theta = 0.524382
+123_Full.theta1 = 0.558937
+123_Full.theta2 = 0.480796
+123_K80.kappa = 1.924139
+omega = 0.033680
+stringencyparameter = 0.100000

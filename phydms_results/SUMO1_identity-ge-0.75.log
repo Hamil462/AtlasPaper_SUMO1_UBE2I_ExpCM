@@ -1,0 +1,188 @@
+2016-07-21 22:18:02,310 - INFO - Beginning execution of phydms_comprehensive in directory /home/jbloom/SUMO_and_UBE2I_ExpCM
+
+2016-07-21 22:18:02,310 - INFO - Progress is being logged to ./phydms_results//SUMO1_identity-ge-0.75.log
+
+2016-07-21 22:18:02,310 - INFO - Version information:
+	Time and date: Thu Jul 21 22:18:00 2016
+	Platform: Linux-3.13.0-68-generic-x86_64-with-Ubuntu-14.04-trusty
+	Python version: 2.7.6 (default, Jun 22 2015, 17:58:13)  [GCC 4.8.2]
+	phydms version: 1.2.dev4
+	Bio version: 1.67
+	cython version: 0.24.1
+	dms_tools version: 1.1.16
+	scipy version: 0.17.1
+	matplotlib version: 1.5.1
+
+2016-07-21 22:18:02,310 - INFO - Parsed the following command-line arguments:
+	randprefs = True
+	omegabysite_fixsyn = False
+	diffprefconc = None
+	treetopology = None
+	prefsfiles = ['./prefs//SUMO1_no-cons_penalize-scores-gt1_prefs.txt', './prefs//SUMO1_with-cons_untransformed_prefs.txt', './prefs//SUMO1_no-cons_untransformed_prefs.txt', './prefs//SUMO1_with-cons_penalize-scores-gt1_prefs.txt', './prefs//SUMO1_with-cons_max-scores-at-1_prefs.txt', './prefs//SUMO1_no-cons_max-scores-at-1_prefs.txt']
+	nostringencybysite = True
+	ncpus = -1
+	useLog = False
+	yngkp = ['M3']
+	nodiffprefsbysite = True
+	noavgprefs = True
+	noomegabysite = True
+	fitF3X4 = False
+	avgrandcontrol = None
+	dateseqs = None
+	outprefix = ./phydms_results//SUMO1_identity-ge-0.75_
+	gammarates = False
+	use_existing = False
+	alignment = ./alignments/SUMO1_alignment_protidentity_ge_0.75.fasta
+	ncats = 6
+
+2016-07-21 22:18:02,310 - INFO - Checking that the alignment ./alignments/SUMO1_alignment_protidentity_ge_0.75.fasta is valid...
+2016-07-21 22:18:02,401 - INFO - Valid alignment specifying 30 sequences of length 303.
+
+2016-07-21 22:18:02,401 - INFO - Will use all 16 available CPUs.
+
+2016-07-21 22:18:02,413 - INFO - Inferring topology using the YNGKP_M0 model starting from a simple neighbor joining tree. The command is: phydms ./alignments/SUMO1_alignment_protidentity_ge_0.75.fasta nj YNGKP_M0 ./phydms_results//SUMO1_identity-ge-0.75_YNGKP_M0 --infertopology --ncats 6 --ncpus 16
+2016-07-21 22:23:42,678 - INFO - Found expected output file ./phydms_results//SUMO1_identity-ge-0.75_YNGKP_M0.log
+2016-07-21 22:23:42,679 - INFO - Found expected output file ./phydms_results//SUMO1_identity-ge-0.75_YNGKP_M0_tree.newick
+2016-07-21 22:23:42,679 - INFO - Found expected output file ./phydms_results//SUMO1_identity-ge-0.75_YNGKP_M0_loglikelihood.txt
+2016-07-21 22:23:42,679 - INFO - Found expected output file ./phydms_results//SUMO1_identity-ge-0.75_YNGKP_M0_modelparams.txt
+2016-07-21 22:23:42,679 - INFO - Analysis successful for YNGKP_M0
+
+2016-07-21 22:23:42,679 - INFO - Starting analysis to optimize tree in ./phydms_results//SUMO1_identity-ge-0.75_YNGKP_M0_tree.newick using model randomized_ExpCM_SUMO1_no-cons_penalize-scores-gt1_prefs. The command is: phydms ./alignments/SUMO1_alignment_protidentity_ge_0.75.fasta ./phydms_results//SUMO1_identity-ge-0.75_YNGKP_M0_tree.newick ExpCM_./prefs//SUMO1_no-cons_penalize-scores-gt1_prefs.txt ./phydms_results//SUMO1_identity-ge-0.75_randomized_ExpCM_SUMO1_no-cons_penalize-scores-gt1_prefs --ncats 6 --randprefs --ncpus 1
+
+2016-07-21 22:23:42,679 - INFO - Starting analysis to optimize tree in ./phydms_results//SUMO1_identity-ge-0.75_YNGKP_M0_tree.newick using model randomized_ExpCM_SUMO1_with-cons_penalize-scores-gt1_prefs. The command is: phydms ./alignments/SUMO1_alignment_protidentity_ge_0.75.fasta ./phydms_results//SUMO1_identity-ge-0.75_YNGKP_M0_tree.newick ExpCM_./prefs//SUMO1_with-cons_penalize-scores-gt1_prefs.txt ./phydms_results//SUMO1_identity-ge-0.75_randomized_ExpCM_SUMO1_with-cons_penalize-scores-gt1_prefs --ncats 6 --randprefs --ncpus 1
+
+2016-07-21 22:23:42,680 - INFO - Starting analysis to optimize tree in ./phydms_results//SUMO1_identity-ge-0.75_YNGKP_M0_tree.newick using model randomized_ExpCM_SUMO1_no-cons_max-scores-at-1_prefs. The command is: phydms ./alignments/SUMO1_alignment_protidentity_ge_0.75.fasta ./phydms_results//SUMO1_identity-ge-0.75_YNGKP_M0_tree.newick ExpCM_./prefs//SUMO1_no-cons_max-scores-at-1_prefs.txt ./phydms_results//SUMO1_identity-ge-0.75_randomized_ExpCM_SUMO1_no-cons_max-scores-at-1_prefs --ncats 6 --randprefs --ncpus 1
+
+2016-07-21 22:23:42,680 - INFO - Starting analysis to optimize tree in ./phydms_results//SUMO1_identity-ge-0.75_YNGKP_M0_tree.newick using model ExpCM_SUMO1_no-cons_penalize-scores-gt1_prefs. The command is: phydms ./alignments/SUMO1_alignment_protidentity_ge_0.75.fasta ./phydms_results//SUMO1_identity-ge-0.75_YNGKP_M0_tree.newick ExpCM_./prefs//SUMO1_no-cons_penalize-scores-gt1_prefs.txt ./phydms_results//SUMO1_identity-ge-0.75_ExpCM_SUMO1_no-cons_penalize-scores-gt1_prefs --ncats 6 --ncpus 1
+
+2016-07-21 22:23:42,680 - INFO - Starting analysis to optimize tree in ./phydms_results//SUMO1_identity-ge-0.75_YNGKP_M0_tree.newick using model ExpCM_SUMO1_no-cons_max-scores-at-1_prefs. The command is: phydms ./alignments/SUMO1_alignment_protidentity_ge_0.75.fasta ./phydms_results//SUMO1_identity-ge-0.75_YNGKP_M0_tree.newick ExpCM_./prefs//SUMO1_no-cons_max-scores-at-1_prefs.txt ./phydms_results//SUMO1_identity-ge-0.75_ExpCM_SUMO1_no-cons_max-scores-at-1_prefs --ncats 6 --ncpus 1
+
+2016-07-21 22:23:42,680 - INFO - Starting analysis to optimize tree in ./phydms_results//SUMO1_identity-ge-0.75_YNGKP_M0_tree.newick using model randomized_ExpCM_SUMO1_with-cons_max-scores-at-1_prefs. The command is: phydms ./alignments/SUMO1_alignment_protidentity_ge_0.75.fasta ./phydms_results//SUMO1_identity-ge-0.75_YNGKP_M0_tree.newick ExpCM_./prefs//SUMO1_with-cons_max-scores-at-1_prefs.txt ./phydms_results//SUMO1_identity-ge-0.75_randomized_ExpCM_SUMO1_with-cons_max-scores-at-1_prefs --ncats 6 --randprefs --ncpus 1
+
+2016-07-21 22:23:42,680 - INFO - Starting analysis to optimize tree in ./phydms_results//SUMO1_identity-ge-0.75_YNGKP_M0_tree.newick using model randomized_ExpCM_SUMO1_no-cons_untransformed_prefs. The command is: phydms ./alignments/SUMO1_alignment_protidentity_ge_0.75.fasta ./phydms_results//SUMO1_identity-ge-0.75_YNGKP_M0_tree.newick ExpCM_./prefs//SUMO1_no-cons_untransformed_prefs.txt ./phydms_results//SUMO1_identity-ge-0.75_randomized_ExpCM_SUMO1_no-cons_untransformed_prefs --ncats 6 --randprefs --ncpus 1
+
+2016-07-21 22:23:42,680 - INFO - Starting analysis to optimize tree in ./phydms_results//SUMO1_identity-ge-0.75_YNGKP_M0_tree.newick using model ExpCM_SUMO1_no-cons_untransformed_prefs. The command is: phydms ./alignments/SUMO1_alignment_protidentity_ge_0.75.fasta ./phydms_results//SUMO1_identity-ge-0.75_YNGKP_M0_tree.newick ExpCM_./prefs//SUMO1_no-cons_untransformed_prefs.txt ./phydms_results//SUMO1_identity-ge-0.75_ExpCM_SUMO1_no-cons_untransformed_prefs --ncats 6 --ncpus 1
+
+2016-07-21 22:23:42,680 - INFO - Starting analysis to optimize tree in ./phydms_results//SUMO1_identity-ge-0.75_YNGKP_M0_tree.newick using model ExpCM_SUMO1_with-cons_untransformed_prefs. The command is: phydms ./alignments/SUMO1_alignment_protidentity_ge_0.75.fasta ./phydms_results//SUMO1_identity-ge-0.75_YNGKP_M0_tree.newick ExpCM_./prefs//SUMO1_with-cons_untransformed_prefs.txt ./phydms_results//SUMO1_identity-ge-0.75_ExpCM_SUMO1_with-cons_untransformed_prefs --ncats 6 --ncpus 1
+
+2016-07-21 22:23:42,681 - INFO - Starting analysis to optimize tree in ./phydms_results//SUMO1_identity-ge-0.75_YNGKP_M0_tree.newick using model YNGKP_M3. The command is: phydms ./alignments/SUMO1_alignment_protidentity_ge_0.75.fasta ./phydms_results//SUMO1_identity-ge-0.75_YNGKP_M0_tree.newick YNGKP_M3 ./phydms_results//SUMO1_identity-ge-0.75_YNGKP_M3 --ncats 6 --ncpus 1
+
+2016-07-21 22:23:42,681 - INFO - Starting analysis to optimize tree in ./phydms_results//SUMO1_identity-ge-0.75_YNGKP_M0_tree.newick using model randomized_ExpCM_SUMO1_with-cons_untransformed_prefs. The command is: phydms ./alignments/SUMO1_alignment_protidentity_ge_0.75.fasta ./phydms_results//SUMO1_identity-ge-0.75_YNGKP_M0_tree.newick ExpCM_./prefs//SUMO1_with-cons_untransformed_prefs.txt ./phydms_results//SUMO1_identity-ge-0.75_randomized_ExpCM_SUMO1_with-cons_untransformed_prefs --ncats 6 --randprefs --ncpus 1
+
+2016-07-21 22:23:42,681 - INFO - Starting analysis to optimize tree in ./phydms_results//SUMO1_identity-ge-0.75_YNGKP_M0_tree.newick using model ExpCM_SUMO1_with-cons_penalize-scores-gt1_prefs. The command is: phydms ./alignments/SUMO1_alignment_protidentity_ge_0.75.fasta ./phydms_results//SUMO1_identity-ge-0.75_YNGKP_M0_tree.newick ExpCM_./prefs//SUMO1_with-cons_penalize-scores-gt1_prefs.txt ./phydms_results//SUMO1_identity-ge-0.75_ExpCM_SUMO1_with-cons_penalize-scores-gt1_prefs --ncats 6 --ncpus 1
+
+2016-07-21 22:23:42,681 - INFO - Starting analysis to optimize tree in ./phydms_results//SUMO1_identity-ge-0.75_YNGKP_M0_tree.newick using model ExpCM_SUMO1_with-cons_max-scores-at-1_prefs. The command is: phydms ./alignments/SUMO1_alignment_protidentity_ge_0.75.fasta ./phydms_results//SUMO1_identity-ge-0.75_YNGKP_M0_tree.newick ExpCM_./prefs//SUMO1_with-cons_max-scores-at-1_prefs.txt ./phydms_results//SUMO1_identity-ge-0.75_ExpCM_SUMO1_with-cons_max-scores-at-1_prefs --ncats 6 --ncpus 1
+
+2016-07-21 22:46:11,229 - INFO - Analysis completed for YNGKP_M3
+2016-07-21 22:46:11,230 - INFO - Found expected output file ./phydms_results//SUMO1_identity-ge-0.75_YNGKP_M3.log
+2016-07-21 22:46:11,230 - INFO - Found expected output file ./phydms_results//SUMO1_identity-ge-0.75_YNGKP_M3_tree.newick
+2016-07-21 22:46:11,231 - INFO - Found expected output file ./phydms_results//SUMO1_identity-ge-0.75_YNGKP_M3_loglikelihood.txt
+2016-07-21 22:46:11,231 - INFO - Found expected output file ./phydms_results//SUMO1_identity-ge-0.75_YNGKP_M3_modelparams.txt
+2016-07-21 22:46:11,231 - INFO - Analysis successful for YNGKP_M3
+
+2016-07-22 00:29:22,246 - INFO - Analysis completed for randomized_ExpCM_SUMO1_with-cons_max-scores-at-1_prefs
+2016-07-22 00:29:22,247 - INFO - Found expected output file ./phydms_results//SUMO1_identity-ge-0.75_randomized_ExpCM_SUMO1_with-cons_max-scores-at-1_prefs.log
+2016-07-22 00:29:22,248 - INFO - Found expected output file ./phydms_results//SUMO1_identity-ge-0.75_randomized_ExpCM_SUMO1_with-cons_max-scores-at-1_prefs_tree.newick
+2016-07-22 00:29:22,249 - INFO - Found expected output file ./phydms_results//SUMO1_identity-ge-0.75_randomized_ExpCM_SUMO1_with-cons_max-scores-at-1_prefs_loglikelihood.txt
+2016-07-22 00:29:22,249 - INFO - Found expected output file ./phydms_results//SUMO1_identity-ge-0.75_randomized_ExpCM_SUMO1_with-cons_max-scores-at-1_prefs_modelparams.txt
+2016-07-22 00:29:22,249 - INFO - Analysis successful for randomized_ExpCM_SUMO1_with-cons_max-scores-at-1_prefs
+
+2016-07-22 00:48:04,516 - INFO - Analysis completed for randomized_ExpCM_SUMO1_with-cons_untransformed_prefs
+2016-07-22 00:48:04,517 - INFO - Found expected output file ./phydms_results//SUMO1_identity-ge-0.75_randomized_ExpCM_SUMO1_with-cons_untransformed_prefs.log
+2016-07-22 00:48:04,517 - INFO - Found expected output file ./phydms_results//SUMO1_identity-ge-0.75_randomized_ExpCM_SUMO1_with-cons_untransformed_prefs_tree.newick
+2016-07-22 00:48:04,517 - INFO - Found expected output file ./phydms_results//SUMO1_identity-ge-0.75_randomized_ExpCM_SUMO1_with-cons_untransformed_prefs_loglikelihood.txt
+2016-07-22 00:48:04,518 - INFO - Found expected output file ./phydms_results//SUMO1_identity-ge-0.75_randomized_ExpCM_SUMO1_with-cons_untransformed_prefs_modelparams.txt
+2016-07-22 00:48:04,518 - INFO - Analysis successful for randomized_ExpCM_SUMO1_with-cons_untransformed_prefs
+
+2016-07-22 01:56:38,171 - INFO - Analysis completed for randomized_ExpCM_SUMO1_no-cons_penalize-scores-gt1_prefs
+2016-07-22 01:56:38,172 - INFO - Found expected output file ./phydms_results//SUMO1_identity-ge-0.75_randomized_ExpCM_SUMO1_no-cons_penalize-scores-gt1_prefs.log
+2016-07-22 01:56:38,172 - INFO - Found expected output file ./phydms_results//SUMO1_identity-ge-0.75_randomized_ExpCM_SUMO1_no-cons_penalize-scores-gt1_prefs_tree.newick
+2016-07-22 01:56:38,172 - INFO - Found expected output file ./phydms_results//SUMO1_identity-ge-0.75_randomized_ExpCM_SUMO1_no-cons_penalize-scores-gt1_prefs_loglikelihood.txt
+2016-07-22 01:56:38,172 - INFO - Found expected output file ./phydms_results//SUMO1_identity-ge-0.75_randomized_ExpCM_SUMO1_no-cons_penalize-scores-gt1_prefs_modelparams.txt
+2016-07-22 01:56:38,172 - INFO - Analysis successful for randomized_ExpCM_SUMO1_no-cons_penalize-scores-gt1_prefs
+
+2016-07-22 01:57:49,252 - INFO - Analysis completed for ExpCM_SUMO1_no-cons_max-scores-at-1_prefs
+2016-07-22 01:57:49,253 - INFO - Found expected output file ./phydms_results//SUMO1_identity-ge-0.75_ExpCM_SUMO1_no-cons_max-scores-at-1_prefs.log
+2016-07-22 01:57:49,253 - INFO - Found expected output file ./phydms_results//SUMO1_identity-ge-0.75_ExpCM_SUMO1_no-cons_max-scores-at-1_prefs_tree.newick
+2016-07-22 01:57:49,253 - INFO - Found expected output file ./phydms_results//SUMO1_identity-ge-0.75_ExpCM_SUMO1_no-cons_max-scores-at-1_prefs_loglikelihood.txt
+2016-07-22 01:57:49,253 - INFO - Found expected output file ./phydms_results//SUMO1_identity-ge-0.75_ExpCM_SUMO1_no-cons_max-scores-at-1_prefs_modelparams.txt
+2016-07-22 01:57:49,254 - INFO - Analysis successful for ExpCM_SUMO1_no-cons_max-scores-at-1_prefs
+
+2016-07-22 02:18:02,619 - INFO - Analysis completed for ExpCM_SUMO1_with-cons_max-scores-at-1_prefs
+2016-07-22 02:18:02,620 - INFO - Found expected output file ./phydms_results//SUMO1_identity-ge-0.75_ExpCM_SUMO1_with-cons_max-scores-at-1_prefs.log
+2016-07-22 02:18:02,620 - INFO - Found expected output file ./phydms_results//SUMO1_identity-ge-0.75_ExpCM_SUMO1_with-cons_max-scores-at-1_prefs_tree.newick
+2016-07-22 02:18:02,620 - INFO - Found expected output file ./phydms_results//SUMO1_identity-ge-0.75_ExpCM_SUMO1_with-cons_max-scores-at-1_prefs_loglikelihood.txt
+2016-07-22 02:18:02,620 - INFO - Found expected output file ./phydms_results//SUMO1_identity-ge-0.75_ExpCM_SUMO1_with-cons_max-scores-at-1_prefs_modelparams.txt
+2016-07-22 02:18:02,620 - INFO - Analysis successful for ExpCM_SUMO1_with-cons_max-scores-at-1_prefs
+
+2016-07-22 02:18:31,652 - INFO - Analysis completed for randomized_ExpCM_SUMO1_no-cons_max-scores-at-1_prefs
+2016-07-22 02:18:31,653 - INFO - Found expected output file ./phydms_results//SUMO1_identity-ge-0.75_randomized_ExpCM_SUMO1_no-cons_max-scores-at-1_prefs.log
+2016-07-22 02:18:31,653 - INFO - Found expected output file ./phydms_results//SUMO1_identity-ge-0.75_randomized_ExpCM_SUMO1_no-cons_max-scores-at-1_prefs_tree.newick
+2016-07-22 02:18:31,653 - INFO - Found expected output file ./phydms_results//SUMO1_identity-ge-0.75_randomized_ExpCM_SUMO1_no-cons_max-scores-at-1_prefs_loglikelihood.txt
+2016-07-22 02:18:31,653 - INFO - Found expected output file ./phydms_results//SUMO1_identity-ge-0.75_randomized_ExpCM_SUMO1_no-cons_max-scores-at-1_prefs_modelparams.txt
+2016-07-22 02:18:31,654 - INFO - Analysis successful for randomized_ExpCM_SUMO1_no-cons_max-scores-at-1_prefs
+
+2016-07-22 02:27:03,225 - INFO - Analysis completed for randomized_ExpCM_SUMO1_with-cons_penalize-scores-gt1_prefs
+2016-07-22 02:27:03,227 - INFO - Found expected output file ./phydms_results//SUMO1_identity-ge-0.75_randomized_ExpCM_SUMO1_with-cons_penalize-scores-gt1_prefs.log
+2016-07-22 02:27:03,227 - INFO - Found expected output file ./phydms_results//SUMO1_identity-ge-0.75_randomized_ExpCM_SUMO1_with-cons_penalize-scores-gt1_prefs_tree.newick
+2016-07-22 02:27:03,227 - INFO - Found expected output file ./phydms_results//SUMO1_identity-ge-0.75_randomized_ExpCM_SUMO1_with-cons_penalize-scores-gt1_prefs_loglikelihood.txt
+2016-07-22 02:27:03,227 - INFO - Found expected output file ./phydms_results//SUMO1_identity-ge-0.75_randomized_ExpCM_SUMO1_with-cons_penalize-scores-gt1_prefs_modelparams.txt
+2016-07-22 02:27:03,227 - INFO - Analysis successful for randomized_ExpCM_SUMO1_with-cons_penalize-scores-gt1_prefs
+
+2016-07-22 04:05:12,807 - INFO - Analysis completed for ExpCM_SUMO1_with-cons_penalize-scores-gt1_prefs
+2016-07-22 04:05:12,808 - INFO - Found expected output file ./phydms_results//SUMO1_identity-ge-0.75_ExpCM_SUMO1_with-cons_penalize-scores-gt1_prefs.log
+2016-07-22 04:05:12,808 - INFO - Found expected output file ./phydms_results//SUMO1_identity-ge-0.75_ExpCM_SUMO1_with-cons_penalize-scores-gt1_prefs_tree.newick
+2016-07-22 04:05:12,809 - INFO - Found expected output file ./phydms_results//SUMO1_identity-ge-0.75_ExpCM_SUMO1_with-cons_penalize-scores-gt1_prefs_loglikelihood.txt
+2016-07-22 04:05:12,809 - INFO - Found expected output file ./phydms_results//SUMO1_identity-ge-0.75_ExpCM_SUMO1_with-cons_penalize-scores-gt1_prefs_modelparams.txt
+2016-07-22 04:05:12,809 - INFO - Analysis successful for ExpCM_SUMO1_with-cons_penalize-scores-gt1_prefs
+
+2016-07-22 05:38:48,048 - INFO - Analysis completed for randomized_ExpCM_SUMO1_no-cons_untransformed_prefs
+2016-07-22 05:38:48,050 - INFO - Found expected output file ./phydms_results//SUMO1_identity-ge-0.75_randomized_ExpCM_SUMO1_no-cons_untransformed_prefs.log
+2016-07-22 05:38:48,050 - INFO - Found expected output file ./phydms_results//SUMO1_identity-ge-0.75_randomized_ExpCM_SUMO1_no-cons_untransformed_prefs_tree.newick
+2016-07-22 05:38:48,050 - INFO - Found expected output file ./phydms_results//SUMO1_identity-ge-0.75_randomized_ExpCM_SUMO1_no-cons_untransformed_prefs_loglikelihood.txt
+2016-07-22 05:38:48,050 - INFO - Found expected output file ./phydms_results//SUMO1_identity-ge-0.75_randomized_ExpCM_SUMO1_no-cons_untransformed_prefs_modelparams.txt
+2016-07-22 05:38:48,050 - INFO - Analysis successful for randomized_ExpCM_SUMO1_no-cons_untransformed_prefs
+
+2016-07-22 05:52:35,967 - INFO - Analysis completed for ExpCM_SUMO1_with-cons_untransformed_prefs
+2016-07-22 05:52:35,968 - INFO - Found expected output file ./phydms_results//SUMO1_identity-ge-0.75_ExpCM_SUMO1_with-cons_untransformed_prefs.log
+2016-07-22 05:52:35,969 - INFO - Found expected output file ./phydms_results//SUMO1_identity-ge-0.75_ExpCM_SUMO1_with-cons_untransformed_prefs_tree.newick
+2016-07-22 05:52:35,969 - INFO - Found expected output file ./phydms_results//SUMO1_identity-ge-0.75_ExpCM_SUMO1_with-cons_untransformed_prefs_loglikelihood.txt
+2016-07-22 05:52:35,969 - INFO - Found expected output file ./phydms_results//SUMO1_identity-ge-0.75_ExpCM_SUMO1_with-cons_untransformed_prefs_modelparams.txt
+2016-07-22 05:52:35,969 - INFO - Analysis successful for ExpCM_SUMO1_with-cons_untransformed_prefs
+
+2016-07-22 05:54:59,127 - INFO - Analysis completed for ExpCM_SUMO1_no-cons_penalize-scores-gt1_prefs
+2016-07-22 05:54:59,129 - INFO - Found expected output file ./phydms_results//SUMO1_identity-ge-0.75_ExpCM_SUMO1_no-cons_penalize-scores-gt1_prefs.log
+2016-07-22 05:54:59,129 - INFO - Found expected output file ./phydms_results//SUMO1_identity-ge-0.75_ExpCM_SUMO1_no-cons_penalize-scores-gt1_prefs_tree.newick
+2016-07-22 05:54:59,129 - INFO - Found expected output file ./phydms_results//SUMO1_identity-ge-0.75_ExpCM_SUMO1_no-cons_penalize-scores-gt1_prefs_loglikelihood.txt
+2016-07-22 05:54:59,129 - INFO - Found expected output file ./phydms_results//SUMO1_identity-ge-0.75_ExpCM_SUMO1_no-cons_penalize-scores-gt1_prefs_modelparams.txt
+2016-07-22 05:54:59,129 - INFO - Analysis successful for ExpCM_SUMO1_no-cons_penalize-scores-gt1_prefs
+
+2016-07-22 06:19:37,733 - INFO - Analysis completed for ExpCM_SUMO1_no-cons_untransformed_prefs
+2016-07-22 06:19:37,734 - INFO - Found expected output file ./phydms_results//SUMO1_identity-ge-0.75_ExpCM_SUMO1_no-cons_untransformed_prefs.log
+2016-07-22 06:19:37,735 - INFO - Found expected output file ./phydms_results//SUMO1_identity-ge-0.75_ExpCM_SUMO1_no-cons_untransformed_prefs_tree.newick
+2016-07-22 06:19:37,735 - INFO - Found expected output file ./phydms_results//SUMO1_identity-ge-0.75_ExpCM_SUMO1_no-cons_untransformed_prefs_loglikelihood.txt
+2016-07-22 06:19:37,735 - INFO - Found expected output file ./phydms_results//SUMO1_identity-ge-0.75_ExpCM_SUMO1_no-cons_untransformed_prefs_modelparams.txt
+2016-07-22 06:19:37,735 - INFO - Analysis successful for ExpCM_SUMO1_no-cons_untransformed_prefs
+
+2016-07-22 06:19:38,745 - INFO - Tabulating model comparisons and writing to ./phydms_results//SUMO1_identity-ge-0.75_modelcomparison.txt
+2016-07-22 06:19:38,761 - INFO - Here are the results of the model comparison:
+	========================================================== ===== ============== ===========================================================================================
+	model                                                      AIC   log likelihood number parameters (optimized + empirical): optimized values                                
+	========================================================== ===== ============== ===========================================================================================
+	ExpCM_SUMO1_no-cons_penalize-scores-gt1_prefs              0.0   -2520.0        6 (6 + 0): beta = 3.20, omega = 0.15, kappa = 1.99, phiA = 0.30, phiC = 0.21, phiG = 0.24  
+	ExpCM_SUMO1_with-cons_penalize-scores-gt1_prefs            0.8   -2520.4        6 (6 + 0): beta = 3.18, omega = 0.15, kappa = 1.99, phiA = 0.30, phiC = 0.21, phiG = 0.24  
+	ExpCM_SUMO1_no-cons_max-scores-at-1_prefs                  27.7  -2533.8        6 (6 + 0): beta = 2.67, omega = 0.14, kappa = 1.98, phiA = 0.30, phiC = 0.21, phiG = 0.24  
+	ExpCM_SUMO1_with-cons_max-scores-at-1_prefs                28.1  -2534.0        6 (6 + 0): beta = 2.56, omega = 0.14, kappa = 1.99, phiA = 0.30, phiC = 0.21, phiG = 0.24  
+	ExpCM_SUMO1_no-cons_untransformed_prefs                    60.6  -2550.3        6 (6 + 0): beta = 1.99, omega = 0.12, kappa = 1.98, phiA = 0.30, phiC = 0.21, phiG = 0.24  
+	ExpCM_SUMO1_with-cons_untransformed_prefs                  60.8  -2550.4        6 (6 + 0): beta = 2.00, omega = 0.12, kappa = 1.98, phiA = 0.30, phiC = 0.21, phiG = 0.24  
+	YNGKP_M3                                                   211.2 -2616.6        15 (6 + 9): omega0 = 0.01, omega1 = 0.14, omega2 = 0.79, p0 = 0.69, p1 = 0.22, kappa = 1.60
+	randomized_ExpCM_SUMO1_no-cons_max-scores-at-1_prefs       253.2 -2646.6        6 (6 + 0): beta = 0.14, omega = 0.09, kappa = 2.08, phiA = 0.29, phiC = 0.21, phiG = 0.25  
+	randomized_ExpCM_SUMO1_with-cons_penalize-scores-gt1_prefs 253.6 -2646.8        6 (6 + 0): beta = 0.12, omega = 0.08, kappa = 2.04, phiA = 0.29, phiC = 0.21, phiG = 0.25  
+	randomized_ExpCM_SUMO1_with-cons_untransformed_prefs       254.5 -2647.2        6 (6 + 0): beta = 0.10, omega = 0.09, kappa = 2.04, phiA = 0.29, phiC = 0.21, phiG = 0.25  
+	randomized_ExpCM_SUMO1_no-cons_penalize-scores-gt1_prefs   254.9 -2647.4        6 (6 + 0): beta = 0.11, omega = 0.08, kappa = 2.07, phiA = 0.29, phiC = 0.21, phiG = 0.25  
+	randomized_ExpCM_SUMO1_no-cons_untransformed_prefs         255.8 -2647.9        6 (6 + 0): beta = 0.10, omega = 0.09, kappa = 2.08, phiA = 0.29, phiC = 0.21, phiG = 0.25  
+	YNGKP_M0                                                   423.8 -2726.9        11 (2 + 9): omega = 0.07, kappa = 1.47                                                     
+	randomized_ExpCM_SUMO1_with-cons_max-scores-at-1_prefs     436.6 -2738.3        6 (6 + 0): beta = 1.00, omega = 0.07, kappa = 2.04, phiA = 0.29, phiC = 0.21, phiG = 0.25  
+	========================================================== ===== ============== ===========================================================================================
+	
+2016-07-22 06:19:38,761 - INFO - Successful completion of phydms_comprehensive

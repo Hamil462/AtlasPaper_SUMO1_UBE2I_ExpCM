@@ -1,0 +1,77 @@
+2016-07-21 22:21:23,935 - INFO - Beginning execution of phydms in directory /home/jbloom/SUMO_and_UBE2I_ExpCM
+
+2016-07-21 22:21:23,935 - INFO - Progress is being logged to ./phydms_results//UBE2I_identity-ge-0.75_ExpCM_UBE2I_no-cons_max-scores-at-1_prefs.log
+
+2016-07-21 22:21:23,936 - INFO - Version information:
+	Time and date: Thu Jul 21 22:21:23 2016
+	Platform: Linux-3.13.0-68-generic-x86_64-with-Ubuntu-14.04-trusty
+	Python version: 2.7.6 (default, Jun 22 2015, 17:58:13)  [GCC 4.8.2]
+	phydms version: 1.2.dev4
+	Bio version: 1.67
+	cython version: 0.24.1
+	dms_tools version: 1.1.16
+	scipy version: 0.17.1
+	matplotlib version: 1.5.1
+
+2016-07-21 22:21:23,936 - INFO - Parsed the following command-line arguments:
+	randprefs = False
+	tree = ./phydms_results//UBE2I_identity-ge-0.75_YNGKP_M0_tree.newick
+	ncpus = 1
+	avgprefs = False
+	seed = 1
+	ncats = 6
+	outprefix = ./phydms_results//UBE2I_identity-ge-0.75_ExpCM_UBE2I_no-cons_max-scores-at-1_prefs
+	alignment = ./alignments/UBE2I_alignment_protidentity_ge_0.75.fasta
+	stringencybysite = False
+	recursion = S
+	no_optimize = False
+	fitF3X4 = False
+	gammarates = False
+	debugsite = None
+	useLog = False
+	diffprefsprior = invquad
+	diffprefsbysite = False
+	diffprefconc = [150, 0.5]
+	infertopology = False
+	omegabysite_fixsyn = False
+	addrateparameter = False
+	omegabysite = False
+	fixbrlen = False
+	dateseqs = None
+	model = ('ExpCM', './prefs//UBE2I_no-cons_max-scores-at-1_prefs.txt')
+	minbrlen = 1e-06
+
+2016-07-21 22:21:23,936 - INFO - Seeding random number generator with 1
+
+2016-07-21 22:21:23,936 - INFO - Reading alignment from ./alignments/UBE2I_alignment_protidentity_ge_0.75.fasta
+2016-07-21 22:21:24,016 - INFO - Read 24 aligned codon sequences from ./alignments/UBE2I_alignment_protidentity_ge_0.75.fasta. Each sequence consists of 158 codons.
+
+2016-07-21 22:21:24,016 - INFO - There will be a single constant substitution rates.
+
+2016-07-21 22:21:24,016 - INFO - The codon substitution model will be experimentally informed by the site-specific amino-acid preferences in ./prefs//UBE2I_no-cons_max-scores-at-1_prefs.txt
+2016-07-21 22:21:24,020 - INFO - Successfully read site-specific amino-acid preferences for all 158 sites.
+
+2016-07-21 22:21:24,020 - INFO - Reading tree from ./phydms_results//UBE2I_identity-ge-0.75_YNGKP_M0_tree.newick
+2016-07-21 22:21:24,022 - INFO - This tree has 24 tips nodes, matching the sequences in alignment.
+2016-07-21 22:21:24,022 - INFO - Adjusting all branch lengths to >= 1e-06.
+
+2016-07-21 22:21:24,023 - INFO - Creating Bio++ object to optimize likelihood...
+2016-07-21 22:21:41,412 - INFO - Created Bio++ object to optimize likelihood for the 158 codon sites of the 24 sequences.
+
+2016-07-21 22:21:41,413 - INFO - The initial log likelihood is -6303.97; now optimizing by maximum likelihood...
+2016-07-22 03:30:12,842 - INFO - Completed optimizing by maximum likelihood.
+2016-07-22 03:30:24,145 - INFO - Here is the optimized log likelihood (also being written to ./phydms_results//UBE2I_identity-ge-0.75_ExpCM_UBE2I_no-cons_max-scores-at-1_prefs_loglikelihood.txt): -5087.28.
+2016-07-22 03:30:24,148 - INFO - Here are the optimized model parameters (also being written to ./phydms_results//UBE2I_identity-ge-0.75_ExpCM_UBE2I_no-cons_max-scores-at-1_prefs_modelparams.txt):
+	123_Full.theta = 0.522463
+	123_Full.theta1 = 0.568786
+	123_Full.theta2 = 0.481687
+	123_K80.kappa = 1.882856
+	omega = 0.053399
+	stringencyparameter = 1.216158
+2016-07-22 03:30:24,150 - INFO - Here is the optimized tree (also being written to ./phydms_results//UBE2I_identity-ge-0.75_ExpCM_UBE2I_no-cons_max-scores-at-1_prefs_tree.newick):
+((ENSPMAP00000001734_Pmar/1-474:0.649664,(((ENSCINP00000030799_Cint/1-489:0.363367,ENSCSAVP00000017431_Csav/1-480:0.713668):1.22262,F29B9.6_Cele/1-498:3.10047):0.718958,FBpp0301731_Dmel/1-477:1.88575):0.842674):0.00233266,((((ENSAMXP00000003057_Amex/1-405:0.316823,ENSDARP00000052745_Drer/1-471:0.29256):0.434603,((ENSTRUP00000040080_Trub/1-474:0.247599,ENSXMAP00000018877_Xmac/1-474:0.205235):0.254357,(ENSAMXP00000012324_Amex/1-474:1.78841,ENSDARP00000011487_Drer/1-474:0.229325):0.341879):0.0982394):0.0521703,(ENSLACP00000008754_Lcha/1-474:0.555313,(((ENSOCUP00000026696_Ocun/1-438:0.423094,((((ENSDORP00000008283_Dord/1-411:0.241091,ENSVPAP00000011684_Vpac/1-531:0.267008):0.0543015,(ENSETEP00000008809_Etel/1-414:0.296486,ENSPCAP00000007578_Pcap/1-537:0.247954):0.348386):0.185028,ENSMMUP00000004874_Mmul/1-549:0.11017):0.346262,ENSP00000348056_Hsap/1-474:1e-06):0.175956):0.0887206,ENSSHAP00000008109_Shar/1-480:0.66743):0.0182591,ENSRNOP00000075659_Rnor/1-453:0.192409):0.226751):0.0838776):0.209538,(ENSORLP00000016945_Olat/1-474:0.364998,ENSTNIP00000009189_Tnig/1-474:0.241208):0.701551):0.0899492,ENSPMAP00000001878_Pmar/1-480:0.748053);
+
+
+2016-07-22 03:30:24,205 - INFO - Using 1 CPUs for the remaining computations.
+
+2016-07-22 03:30:24,205 - INFO - Successful completion of phydms

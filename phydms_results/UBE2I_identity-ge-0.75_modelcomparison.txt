@@ -1,0 +1,18 @@
+========================================================== ====== ============== ===========================================================================================
+model                                                      AIC    log likelihood number parameters (optimized + empirical): optimized values                                
+========================================================== ====== ============== ===========================================================================================
+ExpCM_UBE2I_with-cons_penalize-scores-gt1_prefs            0.0    -4782.1        6 (6 + 0): beta = 7.07, omega = 0.31, kappa = 1.89, phiA = 0.27, phiC = 0.28, phiG = 0.26  
+ExpCM_UBE2I_no-cons_penalize-scores-gt1_prefs              563.7  -5063.9        6 (6 + 0): beta = 1.34, omega = 0.06, kappa = 1.89, phiA = 0.27, phiC = 0.27, phiG = 0.25  
+ExpCM_UBE2I_with-cons_max-scores-at-1_prefs                585.1  -5074.6        6 (6 + 0): beta = 1.59, omega = 0.06, kappa = 1.87, phiA = 0.27, phiC = 0.27, phiG = 0.25  
+ExpCM_UBE2I_no-cons_max-scores-at-1_prefs                  610.4  -5087.3        6 (6 + 0): beta = 1.22, omega = 0.05, kappa = 1.88, phiA = 0.27, phiC = 0.27, phiG = 0.25  
+ExpCM_UBE2I_with-cons_untransformed_prefs                  654.2  -5109.2        6 (6 + 0): beta = 1.20, omega = 0.05, kappa = 1.88, phiA = 0.27, phiC = 0.27, phiG = 0.25  
+ExpCM_UBE2I_no-cons_untransformed_prefs                    669.0  -5116.6        6 (6 + 0): beta = 1.11, omega = 0.05, kappa = 1.88, phiA = 0.27, phiC = 0.27, phiG = 0.25  
+YNGKP_M3                                                   894.6  -5220.4        15 (6 + 9): omega0 = 0.01, omega1 = 0.06, omega2 = 0.25, p0 = 0.57, p1 = 0.39, kappa = 1.71
+randomized_ExpCM_UBE2I_with-cons_untransformed_prefs       1008.9 -5286.6        6 (6 + 0): beta = 0.12, omega = 0.03, kappa = 1.92, phiA = 0.27, phiC = 0.27, phiG = 0.25  
+randomized_ExpCM_UBE2I_with-cons_penalize-scores-gt1_prefs 1009.5 -5286.8        6 (6 + 0): beta = 0.10, omega = 0.03, kappa = 1.92, phiA = 0.27, phiC = 0.27, phiG = 0.25  
+randomized_ExpCM_UBE2I_no-cons_untransformed_prefs         1011.0 -5287.6        6 (6 + 0): beta = 0.10, omega = 0.03, kappa = 1.92, phiA = 0.27, phiC = 0.27, phiG = 0.25  
+YNGKP_M0                                                   1021.8 -5288.0        11 (2 + 9): omega = 0.03, kappa = 1.71                                                     
+randomized_ExpCM_UBE2I_with-cons_max-scores-at-1_prefs     1392.1 -5478.1        6 (6 + 0): beta = 1.00, omega = 0.03, kappa = 2.02, phiA = 0.27, phiC = 0.27, phiG = 0.25  
+randomized_ExpCM_UBE2I_no-cons_penalize-scores-gt1_prefs   1433.0 -5498.6        6 (6 + 0): beta = 1.00, omega = 0.03, kappa = 2.01, phiA = 0.27, phiC = 0.28, phiG = 0.25  
+randomized_ExpCM_UBE2I_no-cons_max-scores-at-1_prefs       1443.9 -5504.0        6 (6 + 0): beta = 0.99, omega = 0.03, kappa = 2.01, phiA = 0.27, phiC = 0.28, phiG = 0.25  
+========================================================== ====== ============== ===========================================================================================

@@ -1,0 +1,74 @@
+2016-07-21 22:18:11,992 - INFO - Beginning execution of phydms in directory /home/jbloom/SUMO_and_UBE2I_ExpCM
+
+2016-07-21 22:18:11,992 - INFO - Progress is being logged to ./phydms_results//UBE2I_identity-ge-0.85_YNGKP_M0.log
+
+2016-07-21 22:18:11,993 - INFO - Version information:
+	Time and date: Thu Jul 21 22:18:11 2016
+	Platform: Linux-3.13.0-68-generic-x86_64-with-Ubuntu-14.04-trusty
+	Python version: 2.7.6 (default, Jun 22 2015, 17:58:13)  [GCC 4.8.2]
+	phydms version: 1.2.dev4
+	Bio version: 1.67
+	cython version: 0.24.1
+	dms_tools version: 1.1.16
+	scipy version: 0.17.1
+	matplotlib version: 1.5.1
+
+2016-07-21 22:18:11,993 - INFO - Parsed the following command-line arguments:
+	randprefs = False
+	tree = nj
+	ncpus = 16
+	avgprefs = False
+	seed = 1
+	ncats = 6
+	outprefix = ./phydms_results//UBE2I_identity-ge-0.85_YNGKP_M0
+	alignment = ./alignments/UBE2I_alignment_protidentity_ge_0.85.fasta
+	stringencybysite = False
+	recursion = S
+	no_optimize = False
+	fitF3X4 = False
+	gammarates = False
+	debugsite = None
+	useLog = False
+	diffprefsprior = invquad
+	diffprefsbysite = False
+	diffprefconc = [150, 0.5]
+	infertopology = True
+	omegabysite_fixsyn = False
+	addrateparameter = False
+	omegabysite = False
+	fixbrlen = False
+	dateseqs = None
+	model = YNGKP_M0
+	minbrlen = 1e-06
+
+2016-07-21 22:18:11,993 - INFO - Seeding random number generator with 1
+
+2016-07-21 22:18:11,993 - INFO - Reading alignment from ./alignments/UBE2I_alignment_protidentity_ge_0.85.fasta
+2016-07-21 22:18:12,061 - INFO - Read 20 aligned codon sequences from ./alignments/UBE2I_alignment_protidentity_ge_0.85.fasta. Each sequence consists of 158 codons.
+
+2016-07-21 22:18:12,061 - INFO - There will be a single constant substitution rates.
+
+2016-07-21 22:18:12,061 - INFO - The codon substitution model with be the M0 version of YNGKP (Yang, Nielsen, Goldman, and Pederson. Genetics. 155:431-449).
+2016-07-21 22:18:12,061 - INFO - The codon equilibrium frequencies will be set by F3X4, estimating the nine nucleotide frequencies empirically from the alignment frequencies.
+
+2016-07-21 22:18:12,061 - INFO - Creating an initial tree from nucleotide sequences by neighbor joining using a crude identity scoring matrix...
+2016-07-21 22:18:12,186 - INFO - Finished creating a crude neighbor-joining initial tree.
+2016-07-21 22:18:12,186 - INFO - This tree has 20 tips nodes, matching the sequences in alignment.
+2016-07-21 22:18:12,187 - INFO - Adjusting all branch lengths to >= 1e-06.
+
+2016-07-21 22:18:12,188 - INFO - Creating Bio++ object to optimize likelihood...
+2016-07-21 22:18:12,531 - INFO - Created Bio++ object to optimize likelihood for the 158 codon sites of the 20 sequences.
+
+2016-07-21 22:18:12,531 - INFO - The initial log likelihood is -6200.81; now optimizing by maximum likelihood...
+2016-07-21 22:21:03,316 - INFO - Completed optimizing by maximum likelihood.
+2016-07-21 22:21:03,317 - INFO - Here is the optimized log likelihood (also being written to ./phydms_results//UBE2I_identity-ge-0.85_YNGKP_M0_loglikelihood.txt): -4294.04.
+2016-07-21 22:21:03,320 - INFO - Here are the optimized model parameters (also being written to ./phydms_results//UBE2I_identity-ge-0.85_YNGKP_M0_modelparams.txt):
+	kappa = 1.706723
+	omega = 0.035264
+2016-07-21 22:21:03,322 - INFO - Here is the optimized tree (also being written to ./phydms_results//UBE2I_identity-ge-0.85_YNGKP_M0_tree.newick):
+((((ENSTRUP00000040080_Trub/1-474:0.214112,ENSXMAP00000018877_Xmac/1-474:0.210928):0.22863,((ENSDARP00000011487_Drer/1-474:0.276374,ENSAMXP00000012324_Amex/1-474:1.46804):0.0877207,(((ENSPMAP00000001734_Pmar/1-474:0.237906,FBpp0301731_Dmel/1-477:2.02884):0.42992,(ENSORLP00000016945_Olat/1-474:0.343961,ENSTNIP00000009189_Tnig/1-474:0.236507):0.586024):0.139297,ENSPMAP00000001878_Pmar/1-480:0.728932):0.169947):0.185149):0.1168,ENSDARP00000052745_Drer/1-471:0.576102):0.130349,(ENSSHAP00000008109_Shar/1-480:0.522427,(ENSRNOP00000075659_Rnor/1-453:0.174607,(ENSOCUP00000026696_Ocun/1-438:0.418105,((((ENSDORP00000008283_Dord/1-411:0.225254,ENSVPAP00000011684_Vpac/1-531:0.266218):0.0306151,(ENSETEP00000008809_Etel/1-414:0.272538,ENSPCAP00000007578_Pcap/1-537:0.260522):0.353864):0.181663,ENSMMUP00000004874_Mmul/1-549:0.117305):0.313779,ENSP00000348056_Hsap/1-474:1e-06):0.134218):0.133842):0.0531951):0.146949,ENSLACP00000008754_Lcha/1-474:0.459769);
+
+
+2016-07-21 22:21:03,327 - INFO - Using 16 CPUs for the remaining computations.
+
+2016-07-21 22:21:03,327 - INFO - Successful completion of phydms
